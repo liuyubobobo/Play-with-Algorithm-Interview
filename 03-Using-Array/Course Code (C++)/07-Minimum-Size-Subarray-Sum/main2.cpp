@@ -4,6 +4,7 @@
 
 using namespace std;
 
+// 另外一个实现, 仅供参考
 class Solution {
 public:
     int minSubArrayLen(int s, vector<int>& nums) {
