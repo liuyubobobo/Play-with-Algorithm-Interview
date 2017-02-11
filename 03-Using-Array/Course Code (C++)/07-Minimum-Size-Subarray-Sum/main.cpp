@@ -4,29 +4,26 @@
 
 using namespace std;
 
+// 暴力解法
+// 时间复杂度: O(n^3)
+// 空间复杂度: O(1)
 class Solution {
 public:
     int minSubArrayLen(int s, vector<int>& nums) {
 
-        assert( s > 0 );
-
-        int l = 0 , r = -1; // [l...r]为我们的窗口
-        int sum = 0;
-        int res = nums.size()+1;
-
-        while( l < nums.size() ){   // 窗口的左边界在数组范围内,则循环继续
-
-            if( r + 1 < nums.size() && sum < s )
-                sum += nums[++r];
-            else // r已经到头 或者 sum >= s
-                sum -= nums[l++];
-
-            if( sum >= s )
-                res = min(res, r-l+1);
-        }
+        int res = nums.size() + 1;
+        for( int l = 0 ; l < nums.size() ; l ++ )
+            for( int r = l ; r < nums.size() ; r ++ ){
+                int sum = 0;
+                for( int i = l ; i <= r ; i ++ )
+                    sum += nums[i];
+                if( sum >= s )
+                    res = min( res , r - l + 1 );
+            }
 
         if( res == nums.size() + 1 )
             return 0;
+
         return res;
     }
 };
