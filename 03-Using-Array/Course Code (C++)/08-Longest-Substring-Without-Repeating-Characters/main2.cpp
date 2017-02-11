@@ -4,6 +4,7 @@
 
 using namespace std;
 
+// 滑动窗口的另一个实现, 仅做参考
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {

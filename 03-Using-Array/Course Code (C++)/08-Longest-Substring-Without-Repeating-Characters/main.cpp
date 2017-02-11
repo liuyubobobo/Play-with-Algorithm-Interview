@@ -10,12 +10,12 @@ public:
 
         int freq[256] = {0};
 
-        int l = 0, r = -1;
+        int l = 0, r = -1; //滑动窗口为s[l...r]
         int res = 0;
 
         while( l < s.size() ){
 
-            if( r + 1 < s.size() && ( r == -1 || freq[s[r+1]] == 0 ) )
+            if( r + 1 < s.size() && freq[s[r+1]] == 0 )
                 freq[s[++r]] ++;
             else    //r已经到头 || freq[s[r+1]] == 1
                 freq[s[l++]] --;
