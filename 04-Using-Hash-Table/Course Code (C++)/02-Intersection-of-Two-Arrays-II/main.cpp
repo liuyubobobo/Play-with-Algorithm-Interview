@@ -10,19 +10,13 @@ public:
 
         map<int, int> record;
         for( int i = 0 ; i < nums1.size() ; i ++ )
-            if( record.find(nums1[i]) == record.end() )
-                record[nums1[i]] = 1;
-            else
-                record[nums1[i]] += 1;
+            record[nums1[i]] += 1;
 
         vector<int> resultVector;
         for( int i = 0 ; i < nums2.size() ; i ++ )
-            if( record.find(nums2[i]) != record.end() &&
-                    record[ nums2[i] ] > 0 ){
+            if( record[ nums2[i] ] > 0 ){
                 resultVector.push_back( nums2[i] );
                 record[nums2[i]] --;
-                if( record[nums2[i]] == 0 )
-                    record.erase( nums2[i] );
             }
 
         return resultVector;
@@ -37,7 +31,7 @@ int main() {
     int nums2[] = {2, 2};
     vector<int> vec2(nums2, nums2 + sizeof(nums2)/sizeof(int));
 
-    vector<int> res = Solution().intersection(vec1, vec2);
+    vector<int> res = Solution().intersect(vec1, vec2);
     for(int i = 0 ; i < res.size() ; i ++ )
         cout<<res[i]<<" ";
     cout<<endl;
