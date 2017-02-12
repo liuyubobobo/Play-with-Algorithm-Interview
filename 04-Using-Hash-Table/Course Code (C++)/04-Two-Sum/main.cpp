@@ -9,16 +9,12 @@ class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
 
-        assert( nums.size() >= 2 );
-
         unordered_map<int,int> record;
-        record[nums[0]] = 0;
-
-        for( int i = 1 ; i < nums.size() ; i ++ ){
+        for( int i = 0 ; i < nums.size() ; i ++ ){
 
             int complement = target - nums[i];
             if( record.find(complement) != record.end() ){
-                const int res[] = {i, record[complement]};
+                int res[] = {i, record[complement]};
                 return vector<int>(res, res + 2);
             }
 
