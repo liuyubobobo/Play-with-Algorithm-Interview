@@ -7,21 +7,17 @@
 
 using namespace std;
 
+// 时间复杂度: O(nlogn)
+// 空间复杂度: O(k)
 class Solution {
 public:
     bool containsNearbyAlmostDuplicate(vector<int>& nums, int k, int t) {
-
-        if( nums.size() <= 1 )
-            return false;
-
-        if( k <= 0 )
-            return false;
 
         set<long long> record;
         for( int i = 0 ; i < nums.size() ; i ++ ){
 
             if( record.lower_bound( (long long)nums[i] - (long long)t ) != record.end() &&
-                fabs(*record.lower_bound( (long long)nums[i] - (long long)t ) - (long long)nums[i]) <= t)
+                *record.lower_bound( (long long)nums[i] - (long long)t ) <= (long long)nums[i] + (long long)t )
                 return true;
 
             record.insert( nums[i] );
