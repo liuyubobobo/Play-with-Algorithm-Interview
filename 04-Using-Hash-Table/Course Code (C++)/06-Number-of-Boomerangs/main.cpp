@@ -13,9 +13,11 @@ public:
         int res = 0;
         for( int i = 0 ; i < points.size() ; i ++ ){
 
+            // record中存储 点i 到所有其他点的距离出现的频次
             unordered_map<int, int> record;
             for( int j = 0 ; j < points.size() ; j ++ )
-                record[dis(points[i], points[j])] += 1;
+                if( j != i )
+                    record[dis(points[i], points[j])] += 1;
 
             for( unordered_map<int, int>::iterator iter = record.begin() ; iter != record.end() ; iter ++ )
                 res += (iter->second)*(iter->second-1);

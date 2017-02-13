@@ -2,7 +2,6 @@
 #include <vector>
 #include <unordered_map>
 #include <cassert>
-#include <stdexcept>
 
 using namespace std;
 
@@ -10,6 +9,7 @@ class Solution {
 public:
     int fourSumCount(vector<int>& A, vector<int>& B, vector<int>& C, vector<int>& D) {
 
+        assert( A.size() == B.size() && B.size() == C.size() && C.size() == D.size() );
         unordered_map<int,int> hashtable;
         for( int i = 0 ; i < C.size() ; i ++ )
             for( int j = 0 ; j < D.size() ; j ++ )
@@ -19,7 +19,7 @@ public:
         for( int i = 0 ; i < A.size() ; i ++ )
             for( int j = 0 ; j < B.size() ; j ++ )
                 if( hashtable.find(-A[i]-B[j]) != hashtable.end() )
-                res += hashtable[-A[i]-B[j]];
+                    res += hashtable[-A[i]-B[j]];
 
         return res;
     }
