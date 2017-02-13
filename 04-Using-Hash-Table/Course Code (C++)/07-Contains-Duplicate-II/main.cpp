@@ -1,7 +1,11 @@
 #include <iostream>
+#include <vector>
+#include <unordered_set>
 
 using namespace std;
 
+// 时间复杂度: O(n)
+// 空间复杂度: O(k)
 class Solution {
 public:
     bool containsNearbyDuplicate(vector<int>& nums, int k) {
@@ -14,22 +18,32 @@ public:
 
         unordered_set<int> record;
         for( int i = 0 ; i < nums.size() ; i ++ ){
-            // record中最多包含从 a 到 a + k 共 k + 1个元素
-            if( record.size() >= k + 1 )
-                record.erase(nums[i-k-1]);
 
             if( record.find( nums[i] ) != record.end() )
                 return true;
-            else
-                record.insert( nums[i] );
-        }
 
+            record.insert( nums[i] );
+
+            // 保持record中最多有k个元素
+            // 因为在下一次循环中会添加一个新元素,使得总共考虑k+1个元素
+            if( record.size() == k + 1 )
+                record.erase( nums[i-k] );
+        }
 
         return false;
     }
 };
 
 int main() {
-    cout << "Hello, World!" << endl;
+
+    int nums[] = {1,2,1};
+    vector<int> vec(nums, nums + sizeof(nums)/sizeof(int));
+    int k = 1;
+
+    if( Solution().containsNearbyDuplicate(vec, k))
+        cout<<"true"<<endl;
+    else
+        cout<<"false"<<endl;
+
     return 0;
 }

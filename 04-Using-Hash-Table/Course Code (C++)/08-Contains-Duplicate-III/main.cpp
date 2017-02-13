@@ -20,14 +20,14 @@ public:
         set<long long> record;
         for( int i = 0 ; i < nums.size() ; i ++ ){
 
-            if( record.size() >= k + 1 )
-                record.erase( nums[i-k-1] );
-
             if( record.lower_bound( (long long)nums[i] - (long long)t ) != record.end() &&
                 fabs(*record.lower_bound( (long long)nums[i] - (long long)t ) - (long long)nums[i]) <= t)
                 return true;
 
             record.insert( nums[i] );
+
+            if( record.size() == k + 1 )
+                record.erase( nums[i-k] );
         }
 
         return false;
