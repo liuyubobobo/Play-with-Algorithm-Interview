@@ -45,6 +45,7 @@ void printLinkedList(ListNode* head){
     return;
 }
 
+// 使用虚拟头结点
 class Solution {
 public:
     ListNode* removeElements(ListNode* head, int val) {
@@ -56,13 +57,12 @@ public:
         while( p->next != NULL ){
 
             if( p->next->val == val ){
-                ListNode* node = p->next;
-                p->next = node->next;
-                delete node;
+                ListNode* delNode = p->next;
+                p->next = delNode->next;
+                delete delNode;
             }
-            else{
+            else
                 p = p->next;
-            }
         }
 
         ListNode* retNode = dummyHead->next;

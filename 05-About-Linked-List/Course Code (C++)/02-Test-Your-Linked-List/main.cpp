@@ -51,20 +51,13 @@ class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
 
-        if( head == NULL )
-            return NULL;
-
         ListNode* pre = NULL;
         ListNode* cur = head;
-        ListNode* nxt = cur->next;
-        while( true ){
+        while( cur != NULL ){
+            ListNode* next = cur->next;
             cur->next = pre;
             pre = cur;
-            cur = nxt;
-            if( cur == NULL )
-                break;
-            else
-                nxt = cur->next;
+            cur = next;
         }
 
         return pre;
