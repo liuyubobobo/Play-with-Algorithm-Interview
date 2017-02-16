@@ -45,6 +45,18 @@ void printLinkedList(ListNode* head){
     return;
 }
 
+void deleteLinkedList(ListNode* head){
+
+    ListNode* curNode = head;
+    while( curNode != NULL ){
+        ListNode* delNode = curNode;
+        curNode = curNode->next;
+        delete delNode;
+    }
+
+    return;
+}
+
 class Solution {
 public:
     ListNode* swapPairs(ListNode* head) {
@@ -80,6 +92,8 @@ int main() {
 
     head = Solution().swapPairs( head );
     printLinkedList(head);
+
+    deleteLinkedList(head);
 
     return 0;
 }
