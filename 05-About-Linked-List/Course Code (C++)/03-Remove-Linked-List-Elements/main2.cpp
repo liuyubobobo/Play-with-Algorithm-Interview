@@ -45,6 +45,18 @@ void printLinkedList(ListNode* head){
     return;
 }
 
+void deleteLinkedList(ListNode* head){
+
+    ListNode* curNode = head;
+    while( curNode != NULL ){
+        ListNode* delNode = curNode;
+        curNode = curNode->next;
+        delete delNode;
+    }
+
+    return;
+}
+
 // 使用虚拟头结点
 class Solution {
 public:
@@ -53,16 +65,16 @@ public:
         ListNode* dummyHead = new ListNode(0);
         dummyHead->next = head;
 
-        ListNode* p = dummyHead;
-        while( p->next != NULL ){
+        ListNode* cur = dummyHead;
+        while( cur->next != NULL ){
 
-            if( p->next->val == val ){
-                ListNode* delNode = p->next;
-                p->next = delNode->next;
+            if( cur->next->val == val ){
+                ListNode* delNode = cur->next;
+                cur->next = delNode->next;
                 delete delNode;
             }
             else
-                p = p->next;
+                cur = cur->next;
         }
 
         ListNode* retNode = dummyHead->next;
@@ -82,6 +94,8 @@ int main() {
 
     Solution().removeElements( head, 6);
     printLinkedList(head);
+
+    deleteLinkedList( head );
 
     return 0;
 }
