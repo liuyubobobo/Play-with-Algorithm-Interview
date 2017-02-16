@@ -29,20 +29,25 @@ ListNode* createLinkedList(int arr[], int n){
 
 void printLinkedList(ListNode* head){
 
-    if( head == NULL ){
-        cout<<"NULL"<<endl;
-        return;
-    }
-
     ListNode* curNode = head;
     while( curNode != NULL ){
-        cout<<curNode->val;
-        if( curNode->next != NULL )
-            cout<<" -> ";
+        cout << curNode->val << " -> ";
         curNode = curNode->next;
     }
 
-    cout<<" -> NULL"<<endl;
+    cout<<"NULL"<<endl;
+
+    return;
+}
+
+void deleteLinkedList(ListNode* head){
+
+    ListNode* curNode = head;
+    while( curNode != NULL ){
+        ListNode* delNode = curNode;
+        curNode = curNode->next;
+        delete delNode;
+    }
 
     return;
 }
@@ -66,12 +71,16 @@ public:
 
 int main(){
 
-    int n = 5;
     int arr[] = {1, 2, 3, 4, 5};
+    int n = sizeof(arr)/sizeof(int);
 
     ListNode* head = createLinkedList(arr, n);
     printLinkedList(head);
-    printLinkedList(Solution().reverseList(head));
+
+    ListNode* head2 = Solution().reverseList(head);
+    printLinkedList(head2);
+
+    deleteLinkedList(head2);
 
     return 0;
 }
