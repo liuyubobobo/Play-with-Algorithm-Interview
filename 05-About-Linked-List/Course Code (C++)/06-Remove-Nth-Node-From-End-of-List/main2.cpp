@@ -46,6 +46,18 @@ void printLinkedList(ListNode* head){
     return;
 }
 
+void deleteLinkedList(ListNode* head){
+
+    ListNode* curNode = head;
+    while( curNode != NULL ){
+        ListNode* delNode = curNode;
+        curNode = curNode->next;
+        delete delNode;
+    }
+
+    return;
+}
+
 // 使用双指针, 对链表只遍历了一遍
 class Solution {
 public:
@@ -56,8 +68,10 @@ public:
 
         ListNode* p = dummyHead;
         ListNode* q = dummyHead;
-        for( int i = 0 ; i < n + 1 ; i ++ )
+        for( int i = 0 ; i < n + 1 ; i ++ ){
+            assert(q);
             q = q->next;
+        }
 
         while( q ){
             p = p->next;
@@ -70,6 +84,7 @@ public:
 
         ListNode* retNode = dummyHead->next;
         delete dummyHead;
+
         return retNode;
     }
 };
@@ -84,6 +99,8 @@ int main() {
 
     head = Solution().removeNthFromEnd(head, 2);
     printLinkedList(head);
+
+    deleteLinkedList(head);
 
     return 0;
 }

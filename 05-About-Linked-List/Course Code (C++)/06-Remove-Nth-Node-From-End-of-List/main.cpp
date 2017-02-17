@@ -46,6 +46,18 @@ void printLinkedList(ListNode* head){
     return;
 }
 
+void deleteLinkedList(ListNode* head){
+
+    ListNode* curNode = head;
+    while( curNode != NULL ){
+        ListNode* delNode = curNode;
+        curNode = curNode->next;
+        delete delNode;
+    }
+
+    return;
+}
+
 // 先记录链表总长度
 // 需要对链表进行两边遍历
 class Solution {
@@ -86,6 +98,8 @@ int main() {
 
     head = Solution().removeNthFromEnd(head, 2);
     printLinkedList(head);
+
+    deleteLinkedList( head );
 
     return 0;
 }
