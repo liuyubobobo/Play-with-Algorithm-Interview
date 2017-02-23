@@ -4,6 +4,7 @@
 
 using namespace std;
 
+// 使用visited数组,记录每一个入队元素
 class Solution {
 public:
     int numSquares(int n) {

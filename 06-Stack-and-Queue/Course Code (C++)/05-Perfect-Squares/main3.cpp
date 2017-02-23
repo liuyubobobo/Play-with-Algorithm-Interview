@@ -1,9 +1,11 @@
 #include <iostream>
 #include <vector>
 #include <queue>
+#include <stdexcept>
 
 using namespace std;
 
+// 优化
 class Solution {
 public:
     int numSquares(int n) {
