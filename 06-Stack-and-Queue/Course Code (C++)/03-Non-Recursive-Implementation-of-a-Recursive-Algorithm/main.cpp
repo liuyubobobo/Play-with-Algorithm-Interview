@@ -16,7 +16,7 @@ struct TreeNode {
 };
 
 struct Command{
-    string s;   // visit, print
+    string s;   // go, print
     TreeNode* node;
     Command(string s, TreeNode* node): s(s), node(node){}
 };
@@ -30,7 +30,7 @@ public:
             return res;
 
         stack<Command> stack;
-        stack.push( Command("visit", root) );
+        stack.push( Command("go", root) );
         while( !stack.empty() ){
             Command command = stack.top();
             stack.pop();
@@ -38,11 +38,11 @@ public:
             if( command.s == "print" )
                 res.push_back( command.node->val );
             else{
-                assert( command.s == "visit" );
+                assert( command.s == "go" );
                 if( command.node->right)
-                    stack.push( Command("visit",command.node->right));
+                    stack.push( Command("go",command.node->right));
                 if( command.node->left)
-                    stack.push( Command("visit",command.node->left));
+                    stack.push( Command("go",command.node->left));
                 stack.push( Command("print", command.node));
             }
         }
