@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <cassert>
 
 using namespace std;
 
@@ -29,6 +30,7 @@ private:
         }
 
         char c = digits[index];
+        assert( c >= '0' && c <= '9' );
         string letters = letterMap[c-'0'];
         for( int i = 0 ; i < letters.size() ; i ++ )
             findCombination(digits, index+1, s + letters[i]);
@@ -38,6 +40,8 @@ private:
 
 public:
     vector<string> letterCombinations(string digits) {
+
+        res.clear();
 
         if( digits == "" )
             return res;
