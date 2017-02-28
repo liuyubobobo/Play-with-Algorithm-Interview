@@ -15,6 +15,7 @@ struct TreeNode {
 class Solution {
 public:
     vector<string> binaryTreePaths(TreeNode* root) {
+
         vector<string> res;
 
         if( root == NULL )
@@ -25,13 +26,13 @@ public:
             return res;
         }
 
-        vector<string> v1 = binaryTreePaths(root->left);
-        for( int i = 0 ; i < v1.size() ; i ++ )
-            res.push_back( to_string(root->val) + "->" + v1[i] );
+        vector<string> leftPaths = binaryTreePaths(root->left);
+        for( int i = 0 ; i < leftPaths.size() ; i ++ )
+            res.push_back( to_string(root->val) + "->" + leftPaths[i] );
 
-        vector<string> v2 = binaryTreePaths(root->right);
-        for( int i = 0 ; i < v2.size() ; i ++ )
-            res.push_back( to_string(root->val) + "->" + v2[i] );
+        vector<string> rightPaths = binaryTreePaths(root->right);
+        for( int i = 0 ; i < rightPaths.size() ; i ++ )
+            res.push_back( to_string(root->val) + "->" + rightPaths[i] );
 
         return res;
     }

@@ -13,6 +13,7 @@ struct TreeNode {
 class Solution {
 
 public:
+    // 在以root为根节点的二叉树中,寻找和为sum的路径,返回这样的路径个数
     int pathSum(TreeNode* root, int sum) {
 
         if( root == NULL )
@@ -25,6 +26,8 @@ public:
 
 private:
 
+    // 在以node为根节点的二叉树中,寻找包含node的路径,和为sum
+    // 返回这样的路径个数
     int findPath( TreeNode* node, int num){
 
         if( node == NULL )
