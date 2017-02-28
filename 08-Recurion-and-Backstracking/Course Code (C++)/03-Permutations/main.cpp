@@ -6,6 +6,9 @@ class Solution {
 private:
     vector<vector<int>> res;
     vector<bool> used;
+
+    // p中保存了一个有index-1个元素的排列。
+    // 向这个排列的末尾添加第index个元素, 获得一个有index个元素的排列
     void generatePermutation( const vector<int>& nums, int index, vector<int>& p){
 
         if( index == nums.size() ){
