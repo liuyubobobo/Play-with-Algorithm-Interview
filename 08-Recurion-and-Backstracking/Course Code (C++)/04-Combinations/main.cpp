@@ -27,7 +27,7 @@ public:
     vector<vector<int>> combine(int n, int k) {
 
         res.clear();
-        if( n <= 0 || k <= 0 )
+        if( n <= 0 || k <= 0 || k > n )
             return res;
 
         vector<int> c;
