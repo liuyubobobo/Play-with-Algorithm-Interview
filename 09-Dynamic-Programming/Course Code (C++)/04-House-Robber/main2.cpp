@@ -12,6 +12,7 @@ public:
         if( n == 0 )
             return 0;
 
+        // memo[i] 表示抢劫 nums[i...n) 所能获得的最大收益
         vector<int> memo(n, 0);
         memo[n-1] = nums[n-1];
         for( int i = n-2 ; i >= 0 ; i -- ) {

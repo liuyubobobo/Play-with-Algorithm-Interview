@@ -5,6 +5,7 @@ using namespace std;
 
 class Solution {
 private:
+    // memo[i] 表示抢劫 nums[i...n) 所能获得的最大收益
     vector<int> memo;
 
     int tryRob( vector<int> &nums, int index){
