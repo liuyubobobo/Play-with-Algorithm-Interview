@@ -6,7 +6,7 @@ using namespace std;
 
 class Solution {
 private:
-    int d[4][2] = {{0,1},{1,0},{0,-1},{-1,0}};
+    int d[4][2] = {{-1,0},{0,1},{1,0},{0,-1}};
     int m,n;
     vector<vector<bool>> visited;
 
@@ -14,16 +14,17 @@ private:
         return x >= 0 && x < m && y >= 0 && y < n;
     }
 
-    // 在board[startx][starty]寻找word[index]
+    // 从board[startx][starty]开始, 寻找word[index...word.size())
     bool searchWord( const vector<vector<char>> &board, const string& word, int index,
                     int startx, int starty ){
 
-        assert( inArea(startx,starty) );
+        //assert( inArea(startx,starty) );
         if( index == word.size() - 1 )
             return board[startx][starty] == word[index];
 
         if( board[startx][starty] == word[index] ){
             visited[startx][starty] = true;
+            // 从startx, starty出发,向四个方向寻
             for( int i = 0 ; i < 4 ; i ++ ){
                 int newx = startx + d[i][0];
                 int newy = starty + d[i][1];
