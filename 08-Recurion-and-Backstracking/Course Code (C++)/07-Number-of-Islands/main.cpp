@@ -14,9 +14,11 @@ private:
         return x >= 0 && x < m && y >= 0 && y < n;
     }
 
+    // 从grid[x][y]的位置开始,进行floodfill
+    // 保证(x,y)合法,且grid[x][y]是没有被访问过的陆地
     void dfs( vector<vector<char>>& grid , int x , int y ){
 
-        assert( inArea(x,y) );
+        //assert( inArea(x,y) );
         visited[x][y] = true;
         for( int i = 0 ; i < 4 ; i ++ ){
             int newx = x + d[i][0];
