@@ -8,6 +8,7 @@ private:
     // memo[i] 表示抢劫 nums[i...n) 所能获得的最大收益
     vector<int> memo;
 
+    // 考虑抢劫nums[index...nums.size())这个范围的所有房子
     int tryRob( vector<int> &nums, int index){
 
         if( index >= nums.size() )
