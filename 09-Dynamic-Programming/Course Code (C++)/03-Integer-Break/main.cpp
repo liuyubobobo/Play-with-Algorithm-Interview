@@ -1,23 +1,29 @@
 #include <iostream>
+#include <cassert>
 
 using namespace std;
 
 class Solution {
 private:
+    int max3( int a , int b , int c ){
+        return max( a , max(b,c) );
+    }
+
+    // 将n进行分割(至少分割两部分), 可以获得的最大乘积
     int breakInteger( int n ){
 
-        int res = n;
+        if( n == 1 )
+            return 1;
+
+        int res = -1;
         for( int i = 1 ; i <= n-1 ; i ++ )
-            res = max( res , i * breakInteger(n-i) );
+            res = max3( res , i*(n-i) , i * breakInteger(n-i) );
         return res;
     }
 public:
     int integerBreak(int n) {
-
-        int res = -1;
-        for( int i = 1 ; i <= n-1 ; i ++ )
-            res = max( res , i * breakInteger(n-i) );
-        return res;
+        assert( n >= 1 );
+        return breakInteger(n);
     }
 };
 

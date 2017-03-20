@@ -5,7 +5,7 @@ using namespace std;
 
 class Solution {
 private:
-    // memo[i] 表示抢劫 nums[i...n) 所能获得的最大收益
+    // memo[i] 表示考虑抢劫 nums[i...n) 所能获得的最大收益
     vector<int> memo;
 
     // 考虑抢劫nums[index...nums.size())这个范围的所有房子

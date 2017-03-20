@@ -6,7 +6,7 @@ using namespace std;
 // 改变状态定义
 class Solution {
 private:
-    // memo[i] 表示抢劫 nums[0...i] 所能获得的最大收益
+    // memo[i] 表示考虑抢劫 nums[0...i] 所能获得的最大收益
     vector<int> memo;
 
     // 考虑抢劫nums[0...index]这个范围的所有房子
