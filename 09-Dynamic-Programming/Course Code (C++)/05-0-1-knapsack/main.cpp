@@ -9,25 +9,27 @@ class Knapsack01{
 private:
     vector<vector<int>> memo;
 
-    int bestValue(const vector<int> &w, const vector<int> v, int index, int W){
+    // 用 [0...index]的物品,填充容积为c的背包的最大价值
+    int bestValue(const vector<int> &w, const vector<int> v, int index, int c){
 
-        if( W == 0 || index < 0 )
+        if( c <= 0 || index < 0 )
             return 0;
 
-        if( memo[index][W] != -1 )
-            return memo[index][W];
+        if( memo[index][c] != -1 )
+            return memo[index][c];
 
-        int res = bestValue(w, v, index-1, W);
-        if( W >= w[index] )
-            res = max( res , v[index] + bestValue(w, v, index-1, W-w[index]) );
-        memo[index][W] = res;
+        int res = bestValue(w, v, index-1, c);
+        if( c >= w[index] )
+            res = max( res , v[index] + bestValue(w, v, index-1, c-w[index]) );
+        memo[index][c] = res;
         return res;
     }
 public:
-    int knapsack01(const vector<int> &w, const vector<int> &v, int W){
+    int knapsack01(const vector<int> &w, const vector<int> &v, int C){
         assert( w.size() == v.size() );
-        memo = vector<vector<int>>( w.size(), vector<int>(W+1,-1));
-        return bestValue(w, v, w.size()-1, W);
+        int n = w.size();
+        memo = vector<vector<int>>( n, vector<int>(C+1,-1));
+        return bestValue(w, v, n-1, C);
     }
 };
 
