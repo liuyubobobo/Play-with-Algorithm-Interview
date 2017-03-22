@@ -7,6 +7,7 @@ class Solution {
 private:
     vector<int> memo;
 
+    // 以 nums[index] 为结尾的最长上升子序列的长度
     int getMaxLength(const vector<int> &nums, int index){
 
         if( memo[index] != -1 )

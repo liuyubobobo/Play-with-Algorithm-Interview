@@ -10,6 +10,7 @@ public:
         if( nums.size() == 0 )
             return 0;
 
+        // memo[i] 表示以 nums[i] 为结尾的最长上升子序列的长度
         vector<int >memo( nums.size() , 1 );
         for( int i = 1 ; i < nums.size() ; i ++ )
             for( int j = 0 ; j < i ; j ++ )
