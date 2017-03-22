@@ -7,19 +7,22 @@ using namespace std;
 class Knapsack01{
 
 public:
-    int knapsack01(const vector<int> &w, const vector<int> &v, int W){
-        assert( w.size() == v.size() );
+    int knapsack01(const vector<int> &w, const vector<int> &v, int C){
+        assert( w.size() == v.size() && C >= 0 );
         int n = w.size();
-        vector<int> memo(W+1,0);
+        if( n == 0 || C == 0 )
+            return 0;
 
-        for( int j = 0 ; j <= W ; j ++ )
+        vector<int> memo(C+1,0);
+
+        for( int j = 0 ; j <= C ; j ++ )
             memo[j] = ( j >= w[0] ? v[0] : 0 );
 
         for( int i = 1 ; i < n ; i ++ )
-            for( int j = W ; j >= w[i] ; j -- )
+            for( int j = C ; j >= w[i] ; j -- )
                 memo[j] = max( memo[j], v[i] + memo[j-w[i]]);
 
-        return memo[W];
+        return memo[C];
     }
 };
 

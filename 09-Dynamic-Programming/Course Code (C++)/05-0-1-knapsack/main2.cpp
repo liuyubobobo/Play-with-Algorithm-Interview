@@ -8,8 +8,11 @@ class Knapsack01{
 
 public:
     int knapsack01(const vector<int> &w, const vector<int> &v, int C){
-        assert( w.size() == v.size() );
+        assert( w.size() == v.size() && C >= 0 );
         int n = w.size();
+        if( n == 0 || C == 0 )
+            return 0;
+
         vector<vector<int>> memo( n, vector<int>(C+1,0));
 
         for( int j = 0 ; j <= C ; j ++ )
