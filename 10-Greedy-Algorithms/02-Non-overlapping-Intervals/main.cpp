@@ -29,14 +29,19 @@ public:
 
         sort(intervals.begin(), intervals.end(), compare);
 
-        int res = 0;
+        // memo[i]表示以intervals[i]为结尾的区间能构成的最长不重叠区间序列
         vector<int> memo( intervals.size() , 1 );
         for( int i = 1 ; i < intervals.size() ; i ++ )
+            // memo[i]
             for( int j = 0 ; j < i ; j ++ )
                 if( intervals[i].start >= intervals[j].end )
                     memo[i] = max( memo[i] , 1 + memo[j] );
 
-        return intervals.size() - memo[intervals.size()-1];
+        int res = 0;
+        for( int i = 0 ; i < memo.size() ; i ++ )
+            res = max( res , memo[i] );
+
+        return intervals.size() - res;
     }
 };
 
