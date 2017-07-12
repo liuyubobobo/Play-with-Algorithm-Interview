@@ -1,32 +1,32 @@
-//
-// Created by Yuan Zhang on 7/12/17.
-//
-
 #include <iostream>
 #include <string>
 #include <cassert>
 
 using namespace std;
 
+// 滑动窗口的另一个实现, 仅做参考
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
 
         int freq[256] = {0};
 
-        int l = 0, r = -1; //滑动窗口为s[l...r]
+        int l = 0, r = -1;
         int res = 0;
 
-        // 在这里, 循环中止的条件可以是r+1<s.size(), 想想看为什么?
-        // 感谢课程QQ群 @千千 指出 :)
         while( r + 1 < s.size() ){
 
-            if( freq[s[r+1]] == 0 )
+            while( r + 1 < s.size() && freq[s[r+1]] == 0 )
                 freq[s[++r]] ++;
-            else    //freq[s[r+1]] == 1
-                freq[s[l++]] --;
 
             res = max( res , r-l+1);
+
+            if( r + 1 < s.size() ){
+                freq[s[++r]] ++;
+                assert( freq[s[r]] == 2 );
+                while( l <= r && freq[s[r]] == 2 )
+                    freq[s[l++]] --;
+            }
         }
 
         return res;
