@@ -1,7 +1,3 @@
-//
-// Created by Yuan Zhang on 7/12/17.
-//
-
 #include <iostream>
 #include <string>
 #include <cassert>
