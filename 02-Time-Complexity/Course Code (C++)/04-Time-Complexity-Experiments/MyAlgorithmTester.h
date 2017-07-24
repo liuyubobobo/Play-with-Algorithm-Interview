@@ -43,6 +43,9 @@ namespace MyAlgorithmTester{
     // O(NlogN)
     void __merge(int arr[], int l, int mid, int r, int aux[]){
 
+        for(int i = l ; i <= r ; i ++)
+            aux[i] = arr[i];
+
         int i = l, j = mid+1;
         for( int k = l ; k <= r; k ++ ){
 
