@@ -39,7 +39,6 @@
 | 3-6 对撞指针 Two Sum II - Input Array is Sorted | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/03-Using-Array/Course%20Code%20(C%2B%2B)/06-Two-Sum-II) |
 | 3-7 滑动窗口 Minimum Size Subarray Sum | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/03-Using-Array/Course%20Code%20(C%2B%2B)/07-Minimum-Size-Subarray-Sum) |
 | 3-8 在滑动窗口中做记录 Longest Substring Without Repeating Characters | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/03-Using-Array/Course%20Code%20(C%2B%2B)/08-Longest-Substring-Without-Repeating-Characters) |
-|
 | **第四章：查找表相关问题** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/04-Using-Hash-Table/Course%20Code%20(C%2B%2B)) |
 | 4-1 set的使用 Intersection of Two Arrays | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/04-Using-Hash-Table/Course%20Code%20(C%2B%2B)/01-Intersection-of-Two-Arrays) |
 | 4-2 map的使用 Intersection of Two Arrays II | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/04-Using-Hash-Table/Course%20Code%20(C%2B%2B)/02-Intersection-of-Two-Arrays-II) |
