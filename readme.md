@@ -11,6 +11,15 @@
 **知乎**: [刘宇波 http://www.zhihu.com/people/liuyubobobo](http://www.zhihu.com/people/liuyubobobo)
 
 
+## 本代码仓包括
+
+* 课程更新信息 [整理中]
+* [课程及补充内容源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview#课程源码目录)
+* 课程练习答案源码参考 [整理中][不断更新]
+* 课程补充内容 [整理中][不断更新]
+* 课程勘误信息 [整理中]
+
+
 ## 课程源码目录 
 
 | **第一章：算法面试到底是什么鬼** | [无代码] |
