@@ -3,10 +3,10 @@
 
 using namespace std;
 
+// 时间复杂度 O(n)
+// 空间复杂度 O(n)
 class Solution {
 public:
-    // 时间复杂度 O(n)
-    // 空间复杂度 O(n)
     void moveZeroes(vector<int>& nums) {
 
         vector<int> nonZeroElements;
