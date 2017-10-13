@@ -54,18 +54,30 @@ public:
 
 int main() {
 
-    char b[3][4] = {{'A','B','C','E'},{'S','F','C','S'},{'A','D','E','E'}};
-    vector<vector<char>> board;
+    char b1[3][4] = {{'A','B','C','E'},{'S','F','C','S'},{'A','D','E','E'}};
+    vector<vector<char>> board1;
     for( int i = 0 ; i < 3 ; i ++ )
-        board.push_back( vector<char>(b[i],b[i]+sizeof(b[i])/sizeof(char)) );
+        board1.push_back( vector<char>(b1[i],b1[i]+sizeof(b1[i])/sizeof(char)) );
 
     int cases = 3;
     string words[3] = {"ABCCED" , "SEE" , "ABCB" };
     for( int i = 0 ; i < cases ; i ++ )
-        if( Solution().exist(board,words[i]))
+        if( Solution().exist(board1,words[i]))
             cout<<"found "<<words[i]<<endl;
         else
             cout<<"can not found "<<words[i]<<endl;
+
+    // ---
+
+    char b2[1][1] = {{'A'}};
+    vector<vector<char>> board2;
+    for( int i = 0 ; i < 3 ; i ++ )
+        board2.push_back( vector<char>(b2[i],b2[i]+sizeof(b2[i])/sizeof(char)) );
+
+    if( Solution().exist(board2,"AB"))
+        cout<<"found AB"<<endl;
+    else
+        cout<<"can not found AB"<<endl;
 
     return 0;
 }
