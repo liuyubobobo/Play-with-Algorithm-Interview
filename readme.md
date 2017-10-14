@@ -97,7 +97,7 @@
 | 8-3 排列问题 Permutations | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/08-Recurion-and-Backstracking/Course%20Code%20(C%2B%2B)/03-Permutations) | [Java源码] |
 | 8-4 组合问题 Combinations | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/08-Recurion-and-Backstracking/Course%20Code%20(C%2B%2B)/04-Combinations) | [Java源码] |
 | 8-5 回溯法解决组合问题的优化 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/08-Recurion-and-Backstracking/Course%20Code%20(C%2B%2B)/05-Combinations-optimized) | [Java源码] |
-| 8-6 二维平面上的回溯法 Word Search | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/08-Recurion-and-Backstracking/Course%20Code%20(C%2B%2B)/06-Word-Search) | [Java源码] |
+| 8-6 二维平面上的回溯法 Word Search | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/08-Recurion-and-Backstracking/Course%20Code%20(C%2B%2B)/06-Word-Search) | [Java源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/08-Recurion-and-Backstracking/Course%20Code%20(Java)/06-Word-Search/src) |
 | 8-7 floodfill算法，一类经典问题 Number of Islands | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/08-Recurion-and-Backstracking/Course%20Code%20(C%2B%2B)/07-Number-of-Islands) | [Java源码] |
 | 8-8 回溯法是人工智能的基础 N Queens | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/08-Recurion-and-Backstracking/Course%20Code%20(C%2B%2B)/08-N-Queens) | [Java源码] |
 | **第九章：动态规划基础** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/09-Dynamic-Programming/Course%20Code%20(C%2B%2B)) | [章节Java源码] |
