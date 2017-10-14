@@ -1,3 +1,7 @@
+/// Source : https://leetcode.com/problems/word-search/description/
+/// Author : liuyubobobo
+/// Time   : 2017-05-05
+
 #include <iostream>
 #include <vector>
 #include <cassert>
@@ -47,7 +51,7 @@ public:
         m = board.size();
         assert( m > 0 );
         n = board[0].size();
-        visited = vector<vector<bool> >(m,vector<bool>(n,false));
+        visited = vector<vector<bool>>(m, vector<bool>(n, false));
         for( int i = 0 ; i < board.size() ; i ++ )
             for( int j = 0 ; j < board[i].size() ; j ++ )
                 if( searchWord( board, word, 0 , i, j) )
