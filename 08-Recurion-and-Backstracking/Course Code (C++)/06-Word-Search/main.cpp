@@ -4,10 +4,14 @@
 
 using namespace std;
 
+// 回溯法
+// 时间复杂度: O(m*n*m*n)
+// 空间复杂度: O(m*n)
 class Solution {
+
 private:
-    int d[4][2] = {{-1,0},{0,1},{1,0},{0,-1}};
-    int m,n;
+    int d[4][2] = {{-1, 0}, {0,1}, {1, 0}, {0, -1}};
+    int m, n;
     vector<vector<bool>> visited;
 
     bool inArea( int x , int y ){
@@ -29,13 +33,14 @@ private:
                 int newx = startx + d[i][0];
                 int newy = starty + d[i][1];
                 if( inArea(newx, newy) && !visited[newx][newy] &&
-                    searchWord( board , word , index + 1 , newx , newy ) )
+                    searchWord(board, word, index + 1, newx, newy))
                     return true;
             }
             visited[startx][starty] = false;
         }
         return false;
     }
+
 public:
     bool exist(vector<vector<char>>& board, string word) {
 
@@ -57,12 +62,12 @@ int main() {
     char b1[3][4] = {{'A','B','C','E'},{'S','F','C','S'},{'A','D','E','E'}};
     vector<vector<char>> board1;
     for( int i = 0 ; i < 3 ; i ++ )
-        board1.push_back( vector<char>(b1[i],b1[i]+sizeof(b1[i])/sizeof(char)) );
+        board1.push_back(vector<char>(b1[i], b1[i] + sizeof(b1[i]) / sizeof(char)));
 
     int cases = 3;
     string words[3] = {"ABCCED" , "SEE" , "ABCB" };
     for( int i = 0 ; i < cases ; i ++ )
-        if( Solution().exist(board1,words[i]))
+        if(Solution().exist(board1,words[i]))
             cout<<"found "<<words[i]<<endl;
         else
             cout<<"can not found "<<words[i]<<endl;
@@ -71,10 +76,10 @@ int main() {
 
     char b2[1][1] = {{'A'}};
     vector<vector<char>> board2;
-    for( int i = 0 ; i < 3 ; i ++ )
-        board2.push_back( vector<char>(b2[i],b2[i]+sizeof(b2[i])/sizeof(char)) );
+    for(int i = 0 ; i < 3 ; i ++)
+        board2.push_back(vector<char>(b2[i],b2[i]+sizeof(b2[i])/sizeof(char)));
 
-    if( Solution().exist(board2,"AB"))
+    if(Solution().exist(board2,"AB"))
         cout<<"found AB"<<endl;
     else
         cout<<"can not found AB"<<endl;
