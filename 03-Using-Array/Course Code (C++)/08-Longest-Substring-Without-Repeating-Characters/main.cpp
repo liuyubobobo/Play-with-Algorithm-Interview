@@ -4,6 +4,8 @@
 
 using namespace std;
 
+// 时间复杂度: O(len(s))
+// 空间复杂度: O(len(charset))
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
