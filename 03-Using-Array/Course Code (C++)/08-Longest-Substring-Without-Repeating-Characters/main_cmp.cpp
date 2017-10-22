@@ -5,7 +5,7 @@
 
 using namespace std;
 
-// 比较这个工程中 main2 和 main4 的算法运行效率
+// 比较这个工程中 main2, main3 和 main4 的算法运行效率
 
 // main2的方案
 int lengthOfLongestSubstring1(const string& s) {
@@ -27,6 +27,33 @@ int lengthOfLongestSubstring1(const string& s) {
 }
 
 
+// main3 的方案
+int lengthOfLongestSubstring2(const string& s) {
+
+    int freq[256] = {0};
+
+    int l = 0, r = -1;
+    int res = 0;
+
+    while( r + 1 < s.size() ){
+
+        while( r + 1 < s.size() && freq[s[r+1]] == 0 )
+            freq[s[++r]] ++;
+
+        res = max( res , r-l+1);
+
+        if( r + 1 < s.size() ){
+            freq[s[++r]] ++;
+            assert( freq[s[r]] == 2 );
+            while( l <= r && freq[s[r]] == 2 )
+                freq[s[l++]] --;
+        }
+    }
+
+    return res;
+}
+
+
 // 查看s[l...r-1]之间是否存在s[r]
 // 若存在,返回相应的索引, 否则返回-1
 int isDuplicateChar(const string& s, int l, int r){
@@ -37,7 +64,7 @@ int isDuplicateChar(const string& s, int l, int r){
 }
 
 // main4的方案
-int lengthOfLongestSubstring2(const string& s) {
+int lengthOfLongestSubstring3(const string& s) {
 
     int l = 0, r = 0; //滑动窗口为s[l...r]
     int res = 0;
@@ -78,9 +105,10 @@ int main() {
     for(int i = 0 ; i < n ; i ++)
         s += (rand()%95 + 32);
 
-    cout << "Test: 1,000,000 length of completely random string:" << endl;
+    cout << "Test: 10,000,000 length of completely random string:" << endl;
     testPerformance("algo1", lengthOfLongestSubstring1, s);
     testPerformance("algo2", lengthOfLongestSubstring2, s);
+    testPerformance("algo3", lengthOfLongestSubstring3, s);
 
     return 0;
 }

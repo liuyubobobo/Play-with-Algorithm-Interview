@@ -1,23 +1,17 @@
-#include <iostream>
-#include <string>
-#include <cassert>
-
-using namespace std;
-
 // 课程问答区yatkun提出的方法,
 // l每次可以向前跳跃, 而不仅仅是+1
 // 但代价是, 为了获得这个跳跃的位置, 每次需要遍历整个窗口的字符串
 //
 // 时间复杂度: O(len(s)*len(charset))
 // 空间复杂度: O(1)
-class Solution {
-public:
-    int lengthOfLongestSubstring(string s) {
+public class Solution4 {
+
+    public int lengthOfLongestSubstring(String s) {
 
         int l = 0, r = 0; //滑动窗口为s[l...r]
         int res = 0;
 
-        while( r < s.size() ){
+        while( r < s.length() ){
 
             int index = isDuplicateChar(s, l, r);
 
@@ -26,30 +20,26 @@ public:
             if( index != -1 )
                 l = index + 1;
 
-            res = max(res, r-l+1);
+            res = Math.max(res, r-l+1);
             r ++;
         }
 
         return res;
     }
 
-private:
     // 查看s[l...r-1]之间是否存在s[r]
     // 若存在,返回相应的索引, 否则返回-1
-    int isDuplicateChar(const string& s, int l, int r){
+    private int isDuplicateChar(String s, int l, int r){
         for(int i = l ; i < r ; i ++)
-            if(s[i] == s[r])
+            if(s.charAt(i) == s.charAt(r))
                 return i;
         return -1;
     }
-};
 
-int main() {
-
-    cout << Solution().lengthOfLongestSubstring( "abcabcbb" )<<endl;
-    cout << Solution().lengthOfLongestSubstring( "bbbbb" )<<endl;
-    cout << Solution().lengthOfLongestSubstring( "pwwkew" )<<endl;
-    cout << Solution().lengthOfLongestSubstring( "" )<<endl;
-
-    return 0;
+    public static void main(String[] args) {
+        System.out.println((new Solution4()).lengthOfLongestSubstring( "abcabcbb" ));
+        System.out.println((new Solution4()).lengthOfLongestSubstring( "bbbbb" ));
+        System.out.println((new Solution4()).lengthOfLongestSubstring( "pwwkew" ));
+        System.out.println((new Solution4()).lengthOfLongestSubstring( "" ));
+    }
 }
