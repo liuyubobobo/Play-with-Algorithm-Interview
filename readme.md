@@ -136,7 +136,7 @@
 | 3-5 三路快排partition思路的应用 Sort Color | 75 | 88 215 | | |
 | 3-6 对撞指针 Two Sum II - Input Array is Sorted | 167 | 125 344 345 11 | | |
 | 3-7 滑动窗口 Minimum Size Subarray Sum | 209 3 | 438 76 | 713 | |
-| 补充1：更多数组中的问题 | [无] | [无] | 303 387 696 121 122 443 717 | 123 |
+| 补充1：更多数组中的问题 | [无] | [无] | 303 387 696 121 122 443 717 674 | 123 |
 | 补充2：二维数组中的基础问题 | [无] | [无] | 598 | |
 | **第四章 查找表相关问题** | | | | |
 | 4-1 set的使用 Intersection of Two Arrays | 349 | [无] | | |
@@ -147,6 +147,7 @@
 | 4-6 灵活选择键值 Number of Boomerangs | 447 | 149 719 | | |
 | 4-7 查找表和滑动窗口 Contain Duplicate II | 219 | 217 | | |
 | 4-8 二分搜索树底层实现的顺序性 Contain Duplicate III | 220 | [无] | | |
+| 补充1：查找表的更多问题 | | | | 128 |
 | **第五章 在链表中穿针引线** | | | | |
 | 5-1 链表，在节点间穿针引线 Reverse Linked List | 206 | 92 | | |
 | 5-2 测试你的链表程序 | 206 | 83 86 328 2 445 | | |
@@ -154,12 +155,13 @@
 | 5-4 复杂的穿针引线 Swap Nodes in Pairs | 24 | 25 147 148 | | |
 | 5-5 不仅仅是穿针引线 Delete Node in a Linked List | 237 | [无] | | |
 | 5-6 链表与双指针 Remove Nth Node Form End of List | 19 | 61 143 234 | | |
+| 补充1：Floyd环检测算法| [无] | [无] | 141 142 | 287 |
 | **第六章 栈、队列、优先队列** | | | | |
 | 6-1 栈的基础应用 Valid Parentheses | 20 | 150 71 | | |
 | 6-2 栈和递归的紧密关系 Binary Tree Preorder, Inorder and Postorder Traversal | 144 94 145 | [无] | | |
 | 6-3 运用栈模拟递归 | 144 94 145 | 341 | 388 | |
 | 6-4 队列的典型应用 Binary Tree Level Order Traversal | 102 | 107 103 199 | | |
-| 6-5 BFS和图的最短路径 Perfect Squares | 279 | 127 126 | | |
+| 6-5 BFS和图的最短路径 Perfect Squares | 279 | 127 126 | | 675 |
 | 6-6 优先队列 | [无] | [无] | | |
 | 6-7 优先队列相关的算法问题 Top K Frequent Elements | 347 | 23 | | |
 | **第七章 二叉树和递归** | | | | |
@@ -187,7 +189,7 @@
 | 9-5 0-1背包问题 | [无] | [无] | | |
 | 9-6 0-1背包问题的优化和变种 | [无] | [无] | | |
 | 9-7 面试中的0-1背包问题 Partition Equal Subset Sum | 416 | 322 377 474 139 494 | | |
-| 9-8 LIS问题 Longest Increasing Subsequence | 300 | 376 | | |
+| 9-8 LIS问题 Longest Increasing Subsequence | 300 | 376 | 673 | |
 | 9-9 LCS，最短路，求动态规划的具体解以及更多 | [无] | [无] | 712 718 | |
 | 补充1：状态压缩DP | [无] | [无] | 698 | |
 | 补充2：更多动态规划问题 | | | 188 | |
