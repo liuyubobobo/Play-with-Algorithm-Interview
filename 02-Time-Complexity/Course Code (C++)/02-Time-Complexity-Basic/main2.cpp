@@ -23,8 +23,8 @@ int sum2( int n ){
 
 int main() {
 
-    cout<<sum1(10000)<<endl;
-    cout<<sum2(10000)<<endl;
+    cout << sum1(10000) << endl;
+    cout << sum2(10000) << endl;
 
     return 0;
 }
