@@ -51,15 +51,15 @@
 | 补充代码2: 动态空间的栈结构 | [整理中] | [敬请期待] |
 | 补充代码3: 动态空间的队列结构 | [整理中] | [敬请期待] |
 | 补充代码4: 动态空间的堆结构<br/>关于堆结构的详细解析，参见《[算法与数据结构](http://coding.imooc.com/class/chapter/71.html)》第四章 | [整理中] | [敬请期待] |
-| **第三章：数组中的问题其实最常见** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/03-Using-Array/Course%20Code%20(C%2B%2B)) | [章节Java源码] |
-| 3-1 从二分查找法看如何写出正确的程序 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/03-Using-Array/Course%20Code%20(C%2B%2B)/01-Binary-Search) | [Java源码] |
-| 3-2 改变变量定义，依然可以写出正确的算法 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/03-Using-Array/Course%20Code%20(C%2B%2B)/02-Binary-Search-II) | [Java源码] |
-| 3-3 在LeetCode上解决第一个问题 Move Zeros | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/03-Using-Array/Course%20Code%20(C%2B%2B)/03-Move-Zeroes) | [Java源码](03-Using-Array/Course%20Code%20(Java)/03-Move-Zeroes/src) |
-| 3-4 即使简单的问题，也有很多优化的思路 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/03-Using-Array/Course%20Code%20(C%2B%2B)/04-Move-Zeroes-II) | [Java源码](03-Using-Array/Course%20Code%20(Java)/04-Move-Zeroes-II) |
-| 3-5 三路快排partition思路的应用 Sort Color | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/03-Using-Array/Course%20Code%20(C%2B%2B)/05-Sort-Colors) | [Java源码] |
-| 3-6 对撞指针 Two Sum II - Input Array is Sorted | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/03-Using-Array/Course%20Code%20(C%2B%2B)/06-Two-Sum-II) | [Java源码] |
-| 3-7 滑动窗口 Minimum Size Subarray Sum | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/03-Using-Array/Course%20Code%20(C%2B%2B)/07-Minimum-Size-Subarray-Sum) | [Java源码] |
-| 3-8 在滑动窗口中做记录 Longest Substring Without Repeating Characters | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/03-Using-Array/Course%20Code%20(C%2B%2B)/08-Longest-Substring-Without-Repeating-Characters) | [Java源码](03-Using-Array/Course%20Code%20(Java)/08-Longest-Substring-Without-Repeating-Characters/) |
+| **第三章：数组中的问题其实最常见** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/03-Using-Array/Course%20Code%20(C%2B%2B)/) | [章节Java源码](/03-Using-Array/Course%20Code%20(Java)/) |
+| 3-1 从二分查找法看如何写出正确的程序 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/03-Using-Array/Course%20Code%20(C%2B%2B)/01-Binary-Search/) | [Java源码](03-Using-Array/Course%20Code%20(Java)/01-Binary-Search/src) |
+| 3-2 改变变量定义，依然可以写出正确的算法 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/03-Using-Array/Course%20Code%20(C%2B%2B)/02-Binary-Search-II/) | [Java源码](03-Using-Array/Course%20Code%20(Java)/02-Binary-Search-II/) |
+| 3-3 在LeetCode上解决第一个问题 Move Zeros | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/03-Using-Array/Course%20Code%20(C%2B%2B)/03-Move-Zeroes/) | [Java源码](03-Using-Array/Course%20Code%20(Java)/03-Move-Zeroes/src) |
+| 3-4 即使简单的问题，也有很多优化的思路 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/03-Using-Array/Course%20Code%20(C%2B%2B)/04-Move-Zeroes-II/) | [Java源码](03-Using-Array/Course%20Code%20(Java)/04-Move-Zeroes-II/src/) |
+| 3-5 三路快排partition思路的应用 Sort Color | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/03-Using-Array/Course%20Code%20(C%2B%2B)/05-Sort-Colors/) | [Java源码] |
+| 3-6 对撞指针 Two Sum II - Input Array is Sorted | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/03-Using-Array/Course%20Code%20(C%2B%2B)/06-Two-Sum-II/) | [Java源码] |
+| 3-7 滑动窗口 Minimum Size Subarray Sum | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/03-Using-Array/Course%20Code%20(C%2B%2B)/07-Minimum-Size-Subarray-Sum/) | [Java源码] |
+| 3-8 在滑动窗口中做记录 Longest Substring Without Repeating Characters | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/03-Using-Array/Course%20Code%20(C%2B%2B)/08-Longest-Substring-Without-Repeating-Characters/) | [Java源码](03-Using-Array/Course%20Code%20(Java)/08-Longest-Substring-Without-Repeating-Characters/) |
 | **第四章：查找表相关问题** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/04-Using-Hash-Table/Course%20Code%20(C%2B%2B)) | [章节Java源码] |
 | 4-1 set的使用 Intersection of Two Arrays | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/04-Using-Hash-Table/Course%20Code%20(C%2B%2B)/01-Intersection-of-Two-Arrays) | [Java源码] |
 | 4-2 map的使用 Intersection of Two Arrays II | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/04-Using-Hash-Table/Course%20Code%20(C%2B%2B)/02-Intersection-of-Two-Arrays-II) | [Java源码] |
