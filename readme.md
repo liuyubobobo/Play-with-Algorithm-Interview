@@ -47,7 +47,7 @@
 | 2-5 递归算法的时间复杂度 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/02-Time-Complexity/Course%20Code%20(C%2B%2B)/05-Recursion-Time-Complexity/) | [Java源码](02-Time-Complexity/Course%20Code%20(Java)/05-Recursion-Time-Complexity/src/) |
 | 2-6 均摊时间复杂度分析（Amortized Time Analysis） | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/02-Time-Complexity/Course%20Code%20(C%2B%2B)/06-Amortized-Time/) | [Java源码](02-Time-Complexity/Course%20Code%20(Java)/06-Amortized-Time/src/) |
 | 2-7 避免复杂度的震荡 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/02-Time-Complexity/Course%20Code%20(C%2B%2B)/07-Amortized-Time-2/) | [Java源码](02-Time-Complexity/Course%20Code%20(C%2B%2B)/07-Amortized-Time-2/src/) |
-| 补充代码1: 动态空间的数组结构 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/02-Time-Complexity/Course%20Code%20(C%2B%2B)/DynamicVector) | [Java源码](02-Time-Complexity/Course%20Code%20(C%2B%2B)/DynamicVector/src/) |
+| 补充代码1: 动态空间的数组结构 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/02-Time-Complexity/Course%20Code%20(C%2B%2B)/Optional-1-Dynamic-Vector) | [Java源码](02-Time-Complexity/Course%20Code%20(C%2B%2B)/Optional-1-Dynamic-Vector/src/) |
 | 补充代码2: 动态空间的栈结构 | [整理中] | [敬请期待] |
 | 补充代码3: 动态空间的队列结构 | [整理中] | [敬请期待] |
 | 补充代码4: 动态空间的堆结构<br/>关于堆结构的详细解析，参见《[算法与数据结构](http://coding.imooc.com/class/chapter/71.html)》第四章 | [整理中] | [敬请期待] |

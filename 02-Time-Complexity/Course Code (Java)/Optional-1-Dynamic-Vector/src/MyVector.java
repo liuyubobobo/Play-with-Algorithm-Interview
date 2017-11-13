@@ -9,10 +9,14 @@ public class MyVector<Item> {
     private int size;       // 存储数组中的元素个数
     private int capacity;   // 存储数组中可以容纳的最大的元素个数
 
+    public MyVector(int capacity){
+        this.capacity = capacity;
+        this.size = 0;
+        data = (Item[])new Object[capacity];
+    }
+
     public MyVector(){
-        data = (Item[])new Object[100];
-        size = 0;
-        capacity = 100;
+        this(10);
     }
 
     // 平均复杂度为 O(1)
@@ -52,6 +56,26 @@ public class MyVector<Item> {
 
         data = newData;
         capacity = newCapacity;
+    }
+
+    public Item at(int index){
+        if(index < 0 || index >= size)
+            throw new IllegalArgumentException("index is out of bound");
+        return data[index];
+    }
+
+    public Item back(){
+        if(size > 0)
+            throw new IllegalArgumentException("Vector need to have at least one element to call back()");
+        return data[size-1];
+    }
+
+    public int getSize(){
+        return size;
+    }
+
+    public int getCapacity(){
+        return capacity;
     }
 
     // 注意：Java语言由于JVM内部机制的因素，测量的性能时间有可能是跳跃不稳定的。
