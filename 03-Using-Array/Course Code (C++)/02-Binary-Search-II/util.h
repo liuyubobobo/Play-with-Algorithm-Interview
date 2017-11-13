@@ -15,7 +15,7 @@ namespace MyUtil {
 
     int *generateRandomArray(int n, int rangeL, int rangeR) {
 
-        assert( n > 0 && rangeL <= rangeR );
+        assert(n > 0 && rangeL <= rangeR);
 
         int *arr = new int[n];
 
@@ -27,7 +27,7 @@ namespace MyUtil {
 
     int *generateOrderedArray(int n) {
 
-        assert( n > 0 );
+        assert(n > 0);
 
         int *arr = new int[n];
 
