@@ -30,8 +30,16 @@ public class MyVector<Item> {
         if(size <= 0)
             throw new IllegalArgumentException("can not pop back for empty vector.");
 
+        Item ret = data[size-1];
         size --;
-        return data[size];
+
+        // 在size达到静态数组最大容量的1/4时才进行resize
+        // resize的容量是当前最大容量的1/2
+        // 防止复杂度的震荡
+        if(size == capacity / 4)
+            resize(capacity / 2);
+
+        return ret;
     }
 
     // 复杂度为 O(n)
@@ -58,9 +66,12 @@ public class MyVector<Item> {
             for(int num = 0 ; num < n ; num ++){
                 vec.push_back(num);
             }
+            for(int num = 0 ; num < n ; num ++){
+                vec.pop_back();
+            }
             long endTime = System.currentTimeMillis();
 
-            System.out.print(n + " operations: \t");
+            System.out.print(2 * n + " operations: \t");
             System.out.println((endTime - startTime) + " ms");
         }
     }
