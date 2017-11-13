@@ -39,15 +39,15 @@
 | 1-2 算法面试只是面试的一部分 | [无代码] | [无代码] |
 | 1-3 如何准备算法面试 | [无代码] | [无代码] |
 | 1-4 如何会打算发面试问题 | [无代码] | [无代码] |
-| **第二章：面试中的复杂度分析** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/02-Time-Complexity/Course%20Code%20(C%2B%2B)) | [章节Java源码]
+| **第二章：面试中的复杂度分析** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/02-Time-Complexity/Course%20Code%20(C%2B%2B)/) | [章节Java源码](02-Time-Complexity/Course%20Code%20(Java)/src/) |
 | 2-1 究竟什么是大O (Big O) | [无代码] | [无代码] |
-| 2-2 对数据规模有一个概念 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/02-Time-Complexity/Course%20Code%20(C%2B%2B)/02-Time-Complexity-Basic) | [Java源码] |
-| 2-3 简单的复杂度分析 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/02-Time-Complexity/Course%20Code%20(C%2B%2B)/03-Common-Code-for-Time-Complexity) | [Java源码] |
-| 2-4 亲自试验自己算法的复杂度 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/02-Time-Complexity/Course%20Code%20(C%2B%2B)/04-Time-Complexity-Experiments) | [Java源码] |
-| 2-5 递归算法的时间复杂度 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/02-Time-Complexity/Course%20Code%20(C%2B%2B)/05-Recursion-Time-Complexity) | [Java源码] |
-| 2-6 均摊时间复杂度分析（Amortized Time Analysis） | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/02-Time-Complexity/Course%20Code%20(C%2B%2B)/06-Amortized-Time) | [Java源码] |
-| 2-7 避免复杂度的震荡 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/02-Time-Complexity/Course%20Code%20(C%2B%2B)/07-Amortized-Time-2) | [Java源码] |
-| 补充代码1: 动态空间的数组结构 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/02-Time-Complexity/Course%20Code%20(C%2B%2B)/DynamicVector) | [Java源码] |
+| 2-2 对数据规模有一个概念 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/02-Time-Complexity/Course%20Code%20(C%2B%2B)/02-Time-Complexity-Basic/) | [Java源码](02-Time-Complexity/Course%20Code%20(Java)/02-Time-Complexity-Basic/src/) |
+| 2-3 简单的复杂度分析 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/02-Time-Complexity/Course%20Code%20(C%2B%2B)/03-Common-Code-for-Time-Complexity/) | [Java源码](02-Time-Complexity/Course%20Code%20(Java)/03-Common-Code-for-Time-Complexity/src/) |
+| 2-4 亲自试验自己算法的复杂度 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/02-Time-Complexity/Course%20Code%20(C%2B%2B)/04-Time-Complexity-Experiments/) | [Java源码](02-Time-Complexity/Course%20Code%20(Java)/04-Time-Complexity-Experiments/src/) |
+| 2-5 递归算法的时间复杂度 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/02-Time-Complexity/Course%20Code%20(C%2B%2B)/05-Recursion-Time-Complexity/) | [Java源码](02-Time-Complexity/Course%20Code%20(Java)/05-Recursion-Time-Complexity/src/) |
+| 2-6 均摊时间复杂度分析（Amortized Time Analysis） | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/02-Time-Complexity/Course%20Code%20(C%2B%2B)/06-Amortized-Time/) | [Java源码](02-Time-Complexity/Course%20Code%20(Java)/06-Amortized-Time/src/) |
+| 2-7 避免复杂度的震荡 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/02-Time-Complexity/Course%20Code%20(C%2B%2B)/07-Amortized-Time-2/) | [Java源码](02-Time-Complexity/Course%20Code%20(C%2B%2B)/07-Amortized-Time-2/src/) |
+| 补充代码1: 动态空间的数组结构 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/02-Time-Complexity/Course%20Code%20(C%2B%2B)/DynamicVector) | [Java源码](02-Time-Complexity/Course%20Code%20(C%2B%2B)/DynamicVector/src/) |
 | 补充代码2: 动态空间的栈结构 | [整理中] | [敬请期待] |
 | 补充代码3: 动态空间的队列结构 | [整理中] | [敬请期待] |
 | 补充代码4: 动态空间的堆结构<br/>关于堆结构的详细解析，参见《[算法与数据结构](http://coding.imooc.com/class/chapter/71.html)》第四章 | [整理中] | [敬请期待] |
