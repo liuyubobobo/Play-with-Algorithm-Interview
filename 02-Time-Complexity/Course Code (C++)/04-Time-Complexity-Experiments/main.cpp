@@ -10,18 +10,18 @@ int main() {
 
     // 数据规模倍乘测试findMax
     // O(n)
-    cout<<"Test for findMax:"<<endl;
-    for( int i = 10 ; i <= 26 ; i ++ ){
+    cout << "Test for findMax:" << endl;
+    for( int i = 10 ; i <= 28 ; i ++ ){
 
-        int n = pow(2,i);
+        int n = pow(2, i);
         int *arr = MyUtil::generateRandomArray(n, 0, 100000000);
 
         clock_t startTime = clock();
         MyAlgorithmTester::findMax(arr, n);
         clock_t endTime = clock();
 
-        cout<<"data size 2^"<<i<<" = "<<n<<"\t";
-        cout<<"Time cost: "<<double(endTime - startTime)/CLOCKS_PER_SEC<<endl;
+        cout << "data size 2^" << i << " = " << n << "\t";
+        cout << "Time cost: " << double(endTime - startTime) / CLOCKS_PER_SEC << " s" << endl;
 
         delete[] arr;
     }
