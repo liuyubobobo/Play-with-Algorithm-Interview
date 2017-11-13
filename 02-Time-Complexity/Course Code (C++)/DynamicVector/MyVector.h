@@ -2,71 +2,68 @@
 // Created by liuyubobobo on 12/01/2017.
 //
 
-#ifndef MYVECTOR_H
-#define MYVECTOR_H
-
-#include <iostream>
-#include <cassert>
-
-using namespace std;
-
+#ifndef INC_06_AMORTIZED_TIME_MYVECTOR_H
+#define INC_06_AMORTIZED_TIME_MYVECTOR_H
 
 template <typename T>
-class MyVector {
+class MyVector{
 
 private:
-    T* _data;
-    int _capacity;   // 存储数组中可以容纳的最大的元素个数
-    int _size;       // 存储数组中的元素个数
+    T* data;
+    int size;       // 存储数组中的元素个数
+    int capacity;   // 存储数组中可以容纳的最大的元素个数
 
-    // O(n)
-    void resize( int newCapacity ){
+    // 复杂度为 O(n)
+    void resize(int newCapacity){
 
-        assert( newCapacity >= _size );
+        assert(newCapacity >= size);
         T *newData = new T[newCapacity];
-        for( int i = 0 ; i < _size ; i ++ )
-            newData[i] = _data[i];
-        delete[] _data;
+        for(int i = 0 ; i < size ; i ++)
+            newData[i] = data[i];
+        delete[] data;
 
-        _data = newData;
-        _capacity = newCapacity;
+        data = newData;
+        capacity = newCapacity;
     }
 
 public:
+    MyVector(){
 
-    MyVector(int cap):_size(0), _capacity(cap){
-        _data = new T[_capacity];
+        data = new T[100];
+        size = 0;
+        capacity = 100;
     }
-
-    MyVector(): MyVector(10){}
 
     ~MyVector(){
-        delete[] _data;
+
+        delete[] data;
     }
 
-    // Average: O(1)
+    // 平均复杂度为 O(1)
     void push_back(T e){
 
-        //assert( size < capacity );
-        if( _size == _capacity )
-            resize( 2*_capacity );
+        if( size == capacity )
+            resize( 2* capacity );
 
-        _data[_size++] = e;
+        data[size++] = e;
     }
 
-    // Average: O(1)
+    // 平均复杂度为 O(1)
     T pop_back(){
 
-        assert( _size > 0 );
-        T ret = _data[--_size];
-        if( _size == _capacity/4 )
-            resize( _capacity/2 );
+        assert(size > 0);
+        T ret = data[size-1];
+        size --;
+
+        // 在size达到静态数组最大容量的1/4时才进行resize
+        // resize的容量是当前最大容量的1/2
+        // 防止复杂度的震荡
+        if(size == capacity / 4)
+            resize(capacity / 2);
 
         return ret;
     }
 
-    int size(){ return _size;}
-    int capacity(){ return _capacity;}
 };
 
-#endif //MYVECTOR_H
+#endif //INC_06_AMORTIZED_TIME_MYVECTOR_H
