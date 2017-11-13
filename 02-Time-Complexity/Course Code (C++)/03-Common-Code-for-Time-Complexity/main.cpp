@@ -1,18 +1,21 @@
 #include <iostream>
+#include <cassert>
 
 using namespace std;
 
 
 // O(1)
-void swapTwoInts( int &a , int &b ){
+void swapTwoInts(int &a , int &b){
     int temp = a;
     a = b;
     b = temp;
     return;
 }
 
-// O(n) Time Complexity
-int sum( int n ){
+// O(n)
+int sum(int n){
+
+    assert(n >= 0);
 
     int ret = 0;
     for( int i = 0 ; i <= n ; i ++ )
@@ -20,10 +23,10 @@ int sum( int n ){
     return ret;
 }
 
-void reverse( string &s ){
+void reverse(string &s){
 
     int n = s.size();
-    for( int i = 0 ; i < n/2 ; i ++ )
+    for(int i = 0 ; i < n/2 ; i ++)
         swap( s[i] , s[n-1-i] );
     return;
 }
@@ -46,7 +49,7 @@ void printInformation(int n){
 
     for( int i = 1 ; i <= n ; i ++ )
         for( int j = 1 ; j <= 30 ; j ++ )
-            cout<<"Class "<<i<<" - "<<"No. "<<j<<endl;
+            cout << "Class " << i << " - " << "No. " << j << endl;
     return;
 }
 
@@ -56,32 +59,32 @@ int binarySearch(int arr[], int n, int target){
     int l = 0, r = n-1;
     while( l <= r ){
         int mid = l + (r-l)/2;
-        if( arr[mid] == target ) return mid;
-        if( arr[mid] > target ) r = mid - 1;
+        if(arr[mid] == target) return mid;
+        if(arr[mid] > target) r = mid - 1;
         else l = mid + 1;
     }
     return -1;
 }
 
-string intToString( int num ){
+string intToString(int num){
 
     string s = "";
     string sign = "+";
-    if( num < 0 ){
+    if(num < 0){
         num = -num;
         sign = "-";
     }
 
-    while( num ){
-        s += '0' + num%10;
+    while(num){
+        s += '0' + num % 10;
         num /= 10;
     }
 
-    if( s == "" )
+    if(s == "")
         s = "0";
 
     reverse(s);
-    if( sign == "-" )
+    if(sign == "-")
         return sign + s;
     else
         return s;
@@ -93,26 +96,26 @@ void hello(int n){
 
     for( int sz = 1 ; sz < n ; sz += sz )
         for( int i = 1 ; i < n ; i ++ )
-            cout<<"Hello, Algorithm!"<<endl;
+            cout << "Hello, Algorithm!" << endl;
 }
 
 
 // O(sqrt(n)) Time Complexity
-bool isPrime( int num ){
+bool isPrime(int num){
 
-    for( int x = 2 ; x*x <= num ; x ++ )
-        if( num%x == 0 )
+    for(int x = 2 ; x * x <= num ; x ++ )
+        if( num % x == 0 )
             return false;
     return true;
 }
 
-bool isPrime2( int num ){
+bool isPrime2(int num){
 
     if( num <= 1 ) return false;
     if( num == 2 ) return true;
-    if( num%2 == 0 ) return false;
+    if( num % 2 == 0 ) return false;
 
-    for( int x = 3 ; x*x <= num ; x += 2 )
+    for(int x = 3 ; x * x <= num ; x += 2)
         if( num%x == 0 )
             return false;
 
@@ -122,17 +125,17 @@ bool isPrime2( int num ){
 
 int main() {
 
-    cout << intToString(123)<<endl;
-    cout << intToString(0)<<endl;
-    cout << intToString(-123)<<endl;
+    cout << intToString(123) << endl;
+    cout << intToString(0) << endl;
+    cout << intToString(-123) << endl;
 
-    cout<<endl;
+    cout << endl;
 
-    if( isPrime2(137) ) cout<<"137 is a prime."<<endl;
-    else cout<<"137 is not a prime."<<endl;
+    if(isPrime2(137)) cout << "137 is a prime." << endl;
+    else cout << "137 is not a prime." << endl;
 
-    if( isPrime2(121) ) cout<<"121 is a prime."<<endl;
-    else cout<<"121 is not a prime."<<endl;
+    if(isPrime2(121)) cout << "121 is a prime." << endl;
+    else cout << "121 is not a prime." << endl;
 
     return 0;
 }
