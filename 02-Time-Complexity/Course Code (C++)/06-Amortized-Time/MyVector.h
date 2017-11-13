@@ -13,10 +13,10 @@ private:
     int size;       // 存储数组中的元素个数
     int capacity;   // 存储数组中可以容纳的最大的元素个数
 
-    // O(n)
+    // 复杂度为 O(n)
     void resize(int newCapacity){
 
-        assert( newCapacity >= size );
+        assert(newCapacity >= size);
         T *newData = new T[newCapacity];
         for( int i = 0 ; i < size ; i ++ )
             newData[i] = data[i];
@@ -39,19 +39,19 @@ public:
         delete[] data;
     }
 
-    // Average: O(1)
+    // 平均复杂度为 O(1)
     void push_back(T e){
 
-        if( size == capacity )
-            resize( 2* capacity );
+        if(size == capacity)
+            resize(2 * capacity);
 
         data[size++] = e;
     }
 
-    // O(1)
+    // 平均复杂度为 O(1)
     T pop_back(){
 
-        assert( size > 0 );
+        assert(size > 0);
         size --;
 
         return data[size];
