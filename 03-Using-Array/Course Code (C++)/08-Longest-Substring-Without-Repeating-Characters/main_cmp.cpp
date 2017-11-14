@@ -5,10 +5,29 @@
 
 using namespace std;
 
-// 比较这个工程中 main2, main3 和 main4 的算法运行效率
+// 比较这个工程中 main1, main2, main3, main4 和 main5 的算法运行效率
+
+// main1的方案
+int lengthOfLongestSubstring1(const string& s) {
+
+    int freq[256] = {0};
+    int l = 0, r = -1;
+    int res = 0;
+
+    while(l < s.size()){
+        if(r + 1 < s.size() && freq[s[r+1]] == 0)
+            freq[s[++r]] ++;
+        else
+            freq[s[l++]] --;
+
+        res = max(res, r-l+1);
+    }
+
+    return res;
+}
 
 // main2的方案
-int lengthOfLongestSubstring1(const string& s) {
+int lengthOfLongestSubstring2(const string& s) {
 
     int freq[256] = {0};
     int l = 0, r = 0;
@@ -28,7 +47,7 @@ int lengthOfLongestSubstring1(const string& s) {
 
 
 // main3 的方案
-int lengthOfLongestSubstring2(const string& s) {
+int lengthOfLongestSubstring3(const string& s) {
 
     int freq[256] = {0};
 
@@ -64,7 +83,7 @@ int isDuplicateChar(const string& s, int l, int r){
 }
 
 // main4的方案
-int lengthOfLongestSubstring3(const string& s) {
+int lengthOfLongestSubstring4(const string& s) {
 
     int l = 0, r = 0; //滑动窗口为s[l...r]
     int res = 0;
@@ -77,6 +96,27 @@ int lengthOfLongestSubstring3(const string& s) {
 
         res = max(res, r-l+1);
         r ++;
+    }
+
+    return res;
+}
+
+
+// main5的方案
+int lengthOfLongestSubstring5(const string& s) {
+
+    int last[256];
+    memset(last, -1, sizeof(last));
+
+    int l = 0, r = -1;
+    int res = 0;
+    while(r + 1 < s.size()){
+        r ++;
+        if(last[s[r]] != -1)
+            l = max(l, last[s[r]] + 1);
+
+        res = max(res, r - l + 1);
+        last[s[r]] = r;
     }
 
     return res;
@@ -109,6 +149,8 @@ int main() {
     testPerformance("algo1", lengthOfLongestSubstring1, s);
     testPerformance("algo2", lengthOfLongestSubstring2, s);
     testPerformance("algo3", lengthOfLongestSubstring3, s);
+    testPerformance("algo4", lengthOfLongestSubstring4, s);
+    testPerformance("algo5", lengthOfLongestSubstring5, s);
 
     return 0;
 }

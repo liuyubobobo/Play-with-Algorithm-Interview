@@ -1,3 +1,4 @@
+// 滑动窗口
 // 时间复杂度: O(len(s))
 // 空间复杂度: O(len(charset))
 public class Solution2 {
@@ -8,7 +9,7 @@ public class Solution2 {
         int l = 0, r = -1; //滑动窗口为s[l...r]
         int res = 0;
 
-        // 在这里, 循环中止的条件可以是r+1<s.size(), 想想看为什么?
+        // 在这里, 循环中止的条件可以是 r + 1 < s.length(), 想想看为什么?
         // 感谢课程QQ群 @千千 指出 :)
         while( r + 1 < s.length() ){
 
@@ -17,7 +18,7 @@ public class Solution2 {
             else    //freq[s[r+1]] == 1
                 freq[s.charAt(l++)] --;
 
-            res = Math.max( res , r-l+1);
+            res = Math.max(res, r-l+1);
         }
 
         return res;

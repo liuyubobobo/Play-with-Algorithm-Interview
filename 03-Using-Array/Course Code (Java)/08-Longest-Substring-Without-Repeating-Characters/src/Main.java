@@ -1,7 +1,7 @@
 import java.lang.reflect.Method;
 import java.lang.Class;
 
-// 比较这个工程中 Solution2, Solution3 和 Solution4 的算法运行效率
+// 比较这个工程中 Solution1, Solution2, Solution3, Solution4 和 Solution5 的算法运行效率
 public class Main {
 
     public static void testPerformace(String algoClassName, String algoName, String s){
@@ -36,9 +36,11 @@ public class Main {
             s.append((char)(Math.random()*95 + 32));
 
         System.out.println("Test: 10,000,000 length of completely random string:");
+        testPerformace("Solution1", "lengthOfLongestSubstring", s.toString());
         testPerformace("Solution2", "lengthOfLongestSubstring", s.toString());
         testPerformace("Solution3", "lengthOfLongestSubstring", s.toString());
         testPerformace("Solution4", "lengthOfLongestSubstring", s.toString());
+        testPerformace("Solution5", "lengthOfLongestSubstring", s.toString());
 
     }
 }
