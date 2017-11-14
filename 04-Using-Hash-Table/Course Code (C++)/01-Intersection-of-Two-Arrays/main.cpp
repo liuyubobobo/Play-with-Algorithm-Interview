@@ -14,12 +14,12 @@ public:
 
         set<int> resultSet;
         for( int i = 0 ; i < nums2.size() ; i ++ )
-            if( record.find( nums2[i] ) != record.end() )
-                resultSet.insert( nums2[i] );
+            if(record.find(nums2[i]) != record.end())
+                resultSet.insert(nums2[i]);
 
         vector<int> resultVector;
-        for(set<int>::iterator iter = resultSet.begin() ; iter != resultSet.end() ; iter ++ )
-            resultVector.push_back( *iter );
+        for(set<int>::iterator iter = resultSet.begin(); iter != resultSet.end(); iter ++ )
+            resultVector.push_back(*iter);
 
         return resultVector;
     }
@@ -35,8 +35,8 @@ int main() {
 
     vector<int> res = Solution().intersection(vec1, vec2);
     for(int i = 0 ; i < res.size() ; i ++ )
-        cout<<res[i]<<" ";
-    cout<<endl;
+        cout << res[i] << " ";
+    cout << endl;
 
     return 0;
 }
