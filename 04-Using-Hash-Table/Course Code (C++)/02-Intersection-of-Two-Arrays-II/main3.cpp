@@ -1,25 +1,29 @@
 #include <iostream>
 #include <vector>
-#include <map>
+#include <set>
+
 using namespace std;
 
 /// 350. Intersection of Two Arrays II
+/// Using multiset
 class Solution {
 public:
     vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {
 
-        map<int, int> record;
-        for(int i = 0 ; i < nums1.size() ; i ++)
-            record[nums1[i]] += 1;
+        multiset<int> record;
+        for(int num: nums1)
+            record.insert(num);
 
-        vector<int> resultVector;
-        for(int i = 0 ; i < nums2.size() ; i ++)
-            if(record[nums2[i]] > 0){
-                resultVector.push_back(nums2[i]);
-                record[nums2[i]] --;
+        multiset<int> result;
+        for(int num: nums2){
+            multiset<int>::iterator iter = record.find(num);
+            if( iter != record.end()){
+                result.insert(num);
+                record.erase(iter);
             }
+        }
 
-        return resultVector;
+        return vector<int>(result.begin(), result.end());
     }
 };
 
