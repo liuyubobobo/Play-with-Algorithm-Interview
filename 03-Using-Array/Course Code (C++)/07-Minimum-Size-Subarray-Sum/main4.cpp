@@ -11,28 +11,28 @@ class Solution {
 public:
     int minSubArrayLen(int s, vector<int>& nums) {
 
-        assert( s > 0 );
+        assert(s > 0);
 
         int l = 0 , r = -1; // [l...r]为我们的窗口
         int sum = 0;
-        int res = nums.size()+1;
+        int res = nums.size() + 1;
 
-        while( r + 1 < nums.size() ){   // 窗口的右边界无法继续扩展了, 则循环继续
+        while(r + 1 < nums.size()){   // 窗口的右边界无法继续扩展了, 则循环继续
 
-            while( r + 1 < nums.size() && sum < s )
+            while(r + 1 < nums.size() && sum < s)
                 sum += nums[++r];
 
-            if( sum >= s )
-                res = min(res, r-l+1);
+            if(sum >= s)
+                res = min(res, r - l + 1);
 
-            while( l < nums.size() && sum >= s ){
+            while(l < nums.size() && sum >= s){
                 sum -= nums[l++];
-                if( sum >= s )
-                    res = min(res, r-l+1);
+                if(sum >= s)
+                    res = min(res, r - l + 1);
             }
         }
 
-        if( res == nums.size() + 1 )
+        if(res == nums.size() + 1)
             return 0;
         return res;
     }
@@ -44,7 +44,7 @@ int main() {
     vector<int> vec( nums, nums + sizeof(nums)/sizeof(int) );
     int s = 7;
 
-    cout<<Solution().minSubArrayLen(s, vec)<<endl;
+    cout << Solution().minSubArrayLen(s, vec) << endl;
 
     return 0;
 }
