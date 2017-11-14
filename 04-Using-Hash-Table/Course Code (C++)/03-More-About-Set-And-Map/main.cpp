@@ -11,9 +11,9 @@ public:
         unordered_set<int> record(nums1.begin(), nums1.end());
 
         unordered_set<int> resultSet;
-        for( int i = 0 ; i < nums2.size() ; i ++ )
-            if( record.find( nums2[i] ) != record.end() )
-                resultSet.insert( nums2[i] );
+        for(int i = 0; i < nums2.size(); i ++ )
+            if(record.find(nums2[i]) != record.end())
+                resultSet.insert(nums2[i]);
 
         return vector<int>(resultSet.begin(), resultSet.end());
     }
@@ -29,8 +29,8 @@ int main() {
 
     vector<int> res = Solution().intersection(vec1, vec2);
     for(int i = 0 ; i < res.size() ; i ++ )
-        cout<<res[i]<<" ";
-    cout<<endl;
+        cout << res[i] << " ";
+    cout << endl;
 
     return 0;
 }
