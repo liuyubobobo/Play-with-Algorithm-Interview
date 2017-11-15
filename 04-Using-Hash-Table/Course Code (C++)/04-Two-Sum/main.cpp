@@ -10,10 +10,10 @@ public:
     vector<int> twoSum(vector<int>& nums, int target) {
 
         unordered_map<int,int> record;
-        for( int i = 0 ; i < nums.size() ; i ++ ){
+        for(int i = 0 ; i < nums.size() ; i ++){
 
             int complement = target - nums[i];
-            if( record.find(complement) != record.end() ){
+            if(record.find(complement) != record.end()){
                 int res[] = {i, record[complement]};
                 return vector<int>(res, res + 2);
             }
@@ -33,7 +33,7 @@ int main() {
     int target = 0;
 
     vector<int> res = Solution().twoSum(nums_vec, target);
-    cout<<res[0]<<" , "<<res[1]<<endl;
+    cout << res[0] << " " << res[1] << endl;
 
     return 0;
 }
