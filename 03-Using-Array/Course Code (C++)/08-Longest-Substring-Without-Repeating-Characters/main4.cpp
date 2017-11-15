@@ -4,6 +4,9 @@
 
 using namespace std;
 
+// 3. Longest Substring Without Repeating Characters
+// https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
+//
 // 课程问答区 @yatkun 提出的方法,
 // l每次可以向前跳跃, 而不仅仅是+1
 // 但代价是, 为了获得这个跳跃的位置, 每次需要遍历整个窗口的字符串
