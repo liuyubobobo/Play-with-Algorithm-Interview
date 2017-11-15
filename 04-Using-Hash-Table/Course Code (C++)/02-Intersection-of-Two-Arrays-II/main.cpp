@@ -1,9 +1,13 @@
 #include <iostream>
 #include <vector>
 #include <map>
+
 using namespace std;
 
-/// 350. Intersection of Two Arrays II
+// 350. Intersection of Two Arrays II
+// https://leetcode.com/problems/intersection-of-two-arrays-ii/description/
+// 时间复杂度: O(nlogn)
+// 空间复杂度: O(n)
 class Solution {
 public:
     vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {

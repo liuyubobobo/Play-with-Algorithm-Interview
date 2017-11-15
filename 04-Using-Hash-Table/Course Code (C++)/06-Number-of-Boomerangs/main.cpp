@@ -6,6 +6,8 @@
 
 using namespace std;
 
+// 447. Number of Boomerangs
+// https://leetcode.com/problems/number-of-boomerangs/description/
 // 时间复杂度: O(n^2)
 // 空间复杂度: O(n)
 class Solution {

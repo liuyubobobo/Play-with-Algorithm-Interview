@@ -1,6 +1,9 @@
 import java.util.HashSet;
 
-/// 349. Intersection of Two Arrays
+// 349. Intersection of Two Arrays
+// https://leetcode.com/problems/intersection-of-two-arrays/description/
+// 时间复杂度: O(len(nums1)+len(nums2))
+// 空间复杂度: O(len(nums1))
 public class Solution349 {
 
     public int[] intersection(int[] nums1, int[] nums2) {

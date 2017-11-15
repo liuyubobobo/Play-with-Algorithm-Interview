@@ -1,7 +1,10 @@
 import java.util.TreeMap;
 import java.util.ArrayList;
 
-/// 350. Intersection of Two Arrays II
+// 350. Intersection of Two Arrays II
+// https://leetcode.com/problems/intersection-of-two-arrays-ii/description/
+// 时间复杂度: O(nlogn)
+// 空间复杂度: O(n)
 public class Solution {
 
     public int[] intersect(int[] nums1, int[] nums2) {

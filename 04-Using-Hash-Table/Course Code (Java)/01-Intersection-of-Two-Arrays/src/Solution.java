@@ -1,6 +1,9 @@
 import java.util.TreeSet;
 
-/// 349. Intersection of Two Arrays
+// 349. Intersection of Two Arrays
+// https://leetcode.com/problems/intersection-of-two-arrays/description/
+// 时间复杂度: O(nlogn)
+// 空间复杂度: O(n)
 public class Solution {
 
     public int[] intersection(int[] nums1, int[] nums2) {

@@ -3,7 +3,10 @@
 #include <set>
 using namespace std;
 
-/// 349. Intersection of Two Arrays
+// 349. Intersection of Two Arrays
+// https://leetcode.com/problems/intersection-of-two-arrays/description/
+// 时间复杂度: O(nlogn)
+// 空间复杂度: O(n)
 class Solution {
 public:
     vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
