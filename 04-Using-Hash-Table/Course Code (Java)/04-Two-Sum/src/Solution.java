@@ -1,5 +1,7 @@
 import java.util.HashMap;
 
+// 时间复杂度：O(n)
+// 空间复杂度：O(n)
 public class Solution {
 
     public int[] twoSum(int[] nums, int target) {
