@@ -15,12 +15,12 @@ struct ListNode {
 /// LinkedList Test Helper Functions
 ListNode* createLinkedList(int arr[], int n){
 
-    if( n == 0 )
+    if(n == 0)
         return NULL;
 
     ListNode* head = new ListNode(arr[0]);
     ListNode* curNode = head;
-    for( int i = 1 ; i < n ; i ++ ){
+    for(int i = 1 ; i < n ; i ++){
         curNode->next = new ListNode(arr[i]);
         curNode = curNode->next;
     }
@@ -31,12 +31,12 @@ ListNode* createLinkedList(int arr[], int n){
 void printLinkedList(ListNode* head){
 
     ListNode* curNode = head;
-    while( curNode != NULL ){
+    while(curNode != NULL){
         cout << curNode->val << " -> ";
         curNode = curNode->next;
     }
 
-    cout<<"NULL"<<endl;
+    cout << "NULL" << endl;
 
     return;
 }
@@ -44,7 +44,7 @@ void printLinkedList(ListNode* head){
 void deleteLinkedList(ListNode* head){
 
     ListNode* curNode = head;
-    while( curNode != NULL ){
+    while(curNode != NULL){
         ListNode* delNode = curNode;
         curNode = curNode->next;
         delete delNode;
@@ -64,10 +64,16 @@ ListNode* findNode(ListNode* head, int x){
     return NULL;
 }
 
+// 237. Delete Node in a Linked List
+// https://leetcode.com/problems/delete-node-in-a-linked-list/description/
+// 时间复杂度: O(1)
+// 空间复杂度: O(1)
 class Solution {
 public:
     void deleteNode(ListNode* node) {
 
+        // 注意: 这个方法对尾节点不适用。题目中要求了给定的node不是尾节点
+        // 在assert中, 我们使用node->next != NULL确保了node不是尾节点
         assert(node != NULL && node->next != NULL);
 
         node->val = node->next->val;
