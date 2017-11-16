@@ -114,8 +114,8 @@
 | 9-8 LIS问题 Longest Increasing Subsequence | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/09-Dynamic-Programming/Course%20Code%20(C%2B%2B)/08-Longest-Increasing-Subsequence) | [Java源码] |
 | 9-9 LCS，最短路，求动态规划的具体解以及更多 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/09-Dynamic-Programming/Course%20Code%20(C%2B%2B)/09-Longest-Common-Subsequence) | [Java源码] |
 | **第十章：贪心算法** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/10-Greedy-Algorithms) | [章节Java源码] |
-| 10-1 贪心基础 Assign Cookies | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/10-Greedy-Algorithms/01-Assign-Cookies) | [Java源码] |
-| 10-2 贪心算法与动态规划的关系 Non-overlapping Intervals | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/10-Greedy-Algorithms/02-Non-overlapping-Intervals) | [Java源码] |
+| 10-1 贪心基础 Assign Cookies | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/10-Greedy-Algorithms/Course%20Code%20(C%2B%2B)/01-Assign-Cookies/) | [Java源码] |
+| 10-2 贪心算法与动态规划的关系 Non-overlapping Intervals | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/10-Greedy-Algorithms/Course%20Code%20(C%2B%2B)/02-Non-overlapping-Intervals/) | [Java源码] |
 | 10-3 贪心选择性质的证明 | [无代码] | [无代码] |
 | **第十一章：课程结语** | [无代码] | [无代码] |
 | 11-1 结语 | [无代码] | [无代码] |
