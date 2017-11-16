@@ -12,12 +12,12 @@ struct ListNode {
 /// LinkedList Test Helper Functions
 ListNode* createLinkedList(int arr[], int n){
 
-    if( n == 0 )
+    if(n == 0)
         return NULL;
 
     ListNode* head = new ListNode(arr[0]);
     ListNode* curNode = head;
-    for( int i = 1 ; i < n ; i ++ ){
+    for(int i = 1 ; i < n ; i ++){
         curNode->next = new ListNode(arr[i]);
         curNode = curNode->next;
     }
@@ -27,20 +27,20 @@ ListNode* createLinkedList(int arr[], int n){
 
 void printLinkedList(ListNode* head){
 
-    if( head == NULL ){
+    if(head == NULL){
         cout<<"NULL"<<endl;
         return;
     }
 
     ListNode* curNode = head;
-    while( curNode != NULL ){
-        cout<<curNode->val;
-        if( curNode->next != NULL )
-            cout<<" -> ";
+    while(curNode != NULL){
+        cout << curNode->val;
+        if(curNode->next != NULL)
+            cout << " -> ";
         curNode = curNode->next;
     }
 
-    cout<<endl;
+    cout << endl;
 
     return;
 }
@@ -48,7 +48,7 @@ void printLinkedList(ListNode* head){
 void deleteLinkedList(ListNode* head){
 
     ListNode* curNode = head;
-    while( curNode != NULL ){
+    while(curNode != NULL){
         ListNode* delNode = curNode;
         curNode = curNode->next;
         delete delNode;
@@ -57,6 +57,10 @@ void deleteLinkedList(ListNode* head){
     return;
 }
 
+// 24. Swap Nodes in Pairs
+// https://leetcode.com/problems/swap-nodes-in-pairs/description/
+// 时间复杂度: O(n)
+// 空间复杂度: O(1)
 class Solution {
 public:
     ListNode* swapPairs(ListNode* head) {
@@ -65,7 +69,7 @@ public:
         dummyHead->next = head;
 
         ListNode* p = dummyHead;
-        while( p->next && p->next->next ){
+        while(p->next && p->next->next){
             ListNode* node1 = p->next;
             ListNode* node2 = node1->next;
             ListNode* next = node2->next;
@@ -85,12 +89,12 @@ public:
 int main() {
 
     int arr[] = {1, 2, 3, 4};
-    int n = sizeof(arr)/sizeof(int);
+    int n = sizeof(arr) / sizeof(int);
 
     ListNode* head = createLinkedList(arr, n);
     printLinkedList(head);
 
-    head = Solution().swapPairs( head );
+    head = Solution().swapPairs(head);
     printLinkedList(head);
 
     deleteLinkedList(head);
