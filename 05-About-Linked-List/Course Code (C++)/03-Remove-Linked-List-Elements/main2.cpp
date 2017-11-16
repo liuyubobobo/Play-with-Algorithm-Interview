@@ -12,12 +12,12 @@ struct ListNode {
 /// LinkedList Test Helper Functions
 ListNode* createLinkedList(int arr[], int n){
 
-    if( n == 0 )
+    if(n == 0)
         return NULL;
 
     ListNode* head = new ListNode(arr[0]);
     ListNode* curNode = head;
-    for( int i = 1 ; i < n ; i ++ ){
+    for(int i = 1 ; i < n ; i ++){
         curNode->next = new ListNode(arr[i]);
         curNode = curNode->next;
     }
@@ -27,20 +27,20 @@ ListNode* createLinkedList(int arr[], int n){
 
 void printLinkedList(ListNode* head){
 
-    if( head == NULL ){
-        cout<<"NULL"<<endl;
+    if(head == NULL){
+        cout << "NULL" << endl;
         return;
     }
 
     ListNode* curNode = head;
-    while( curNode != NULL ){
-        cout<<curNode->val;
-        if( curNode->next != NULL )
-            cout<<" -> ";
+    while(curNode != NULL){
+        cout << curNode->val;
+        if(curNode->next != NULL)
+            cout << " -> ";
         curNode = curNode->next;
     }
 
-    cout<<endl;
+    cout << endl;
 
     return;
 }
@@ -48,7 +48,7 @@ void printLinkedList(ListNode* head){
 void deleteLinkedList(ListNode* head){
 
     ListNode* curNode = head;
-    while( curNode != NULL ){
+    while(curNode != NULL){
         ListNode* delNode = curNode;
         curNode = curNode->next;
         delete delNode;
@@ -57,18 +57,22 @@ void deleteLinkedList(ListNode* head){
     return;
 }
 
+// 203. Remove Linked List Elements
+// https://leetcode.com/problems/remove-linked-list-elements/description/
 // 使用虚拟头结点
+// 时间复杂度: O(n)
+// 空间复杂度: O(1)
 class Solution {
 public:
     ListNode* removeElements(ListNode* head, int val) {
 
+        // 创建虚拟头结点
         ListNode* dummyHead = new ListNode(0);
         dummyHead->next = head;
 
         ListNode* cur = dummyHead;
-        while( cur->next != NULL ){
-
-            if( cur->next->val == val ){
+        while(cur->next != NULL){
+            if(cur->next->val == val){
                 ListNode* delNode = cur->next;
                 cur->next = delNode->next;
                 delete delNode;
@@ -87,15 +91,15 @@ public:
 int main() {
 
     int arr[] = {1, 2, 6, 3, 4, 5, 6};
-    int n = sizeof(arr)/sizeof(int);
+    int n = sizeof(arr) / sizeof(int);
 
     ListNode* head = createLinkedList(arr, n);
     printLinkedList(head);
 
-    Solution().removeElements( head, 6);
+    Solution().removeElements(head, 6);
     printLinkedList(head);
 
-    deleteLinkedList( head );
+    deleteLinkedList(head);
 
     return 0;
 }
