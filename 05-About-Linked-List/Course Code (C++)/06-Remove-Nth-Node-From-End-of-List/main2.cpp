@@ -13,12 +13,12 @@ struct ListNode {
 /// LinkedList Test Helper Functions
 ListNode* createLinkedList(int arr[], int n){
 
-    if( n == 0 )
+    if(n == 0)
         return NULL;
 
     ListNode* head = new ListNode(arr[0]);
     ListNode* curNode = head;
-    for( int i = 1 ; i < n ; i ++ ){
+    for(int i = 1 ; i < n ; i ++){
         curNode->next = new ListNode(arr[i]);
         curNode = curNode->next;
     }
@@ -29,19 +29,19 @@ ListNode* createLinkedList(int arr[], int n){
 void printLinkedList(ListNode* head){
 
     if( head == NULL ){
-        cout<<"NULL"<<endl;
+        cout << "NULL" << endl;
         return;
     }
 
     ListNode* curNode = head;
-    while( curNode != NULL ){
-        cout<<curNode->val;
+    while(curNode != NULL){
+        cout << curNode->val;
         if( curNode->next != NULL )
-            cout<<" -> ";
+            cout << " -> ";
         curNode = curNode->next;
     }
 
-    cout<<endl;
+    cout << endl;
 
     return;
 }
@@ -49,7 +49,7 @@ void printLinkedList(ListNode* head){
 void deleteLinkedList(ListNode* head){
 
     ListNode* curNode = head;
-    while( curNode != NULL ){
+    while(curNode != NULL){
         ListNode* delNode = curNode;
         curNode = curNode->next;
         delete delNode;
@@ -58,7 +58,12 @@ void deleteLinkedList(ListNode* head){
     return;
 }
 
+// 19. Remove Nth Node From End of List
+// https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/
+//
 // 使用双指针, 对链表只遍历了一遍
+// 时间复杂度: O(n)
+// 空间复杂度: O(1)
 class Solution {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
@@ -73,7 +78,7 @@ public:
             q = q->next;
         }
 
-        while( q ){
+        while(q){
             p = p->next;
             q = q->next;
         }

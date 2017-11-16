@@ -13,12 +13,12 @@ struct ListNode {
 /// LinkedList Test Helper Functions
 ListNode* createLinkedList(int arr[], int n){
 
-    if( n == 0 )
+    if(n == 0)
         return NULL;
 
     ListNode* head = new ListNode(arr[0]);
     ListNode* curNode = head;
-    for( int i = 1 ; i < n ; i ++ ){
+    for(int i = 1 ; i < n ; i ++){
         curNode->next = new ListNode(arr[i]);
         curNode = curNode->next;
     }
@@ -28,20 +28,20 @@ ListNode* createLinkedList(int arr[], int n){
 
 void printLinkedList(ListNode* head){
 
-    if( head == NULL ){
+    if(head == NULL){
         cout<<"NULL"<<endl;
         return;
     }
 
     ListNode* curNode = head;
-    while( curNode != NULL ){
-        cout<<curNode->val;
-        if( curNode->next != NULL )
-            cout<<" -> ";
+    while(curNode != NULL){
+        cout << curNode->val;
+        if(curNode->next != NULL)
+            cout << " -> ";
         curNode = curNode->next;
     }
 
-    cout<<endl;
+    cout << endl;
 
     return;
 }
@@ -49,7 +49,7 @@ void printLinkedList(ListNode* head){
 void deleteLinkedList(ListNode* head){
 
     ListNode* curNode = head;
-    while( curNode != NULL ){
+    while(curNode != NULL){
         ListNode* delNode = curNode;
         curNode = curNode->next;
         delete delNode;
@@ -58,8 +58,13 @@ void deleteLinkedList(ListNode* head){
     return;
 }
 
+// 19. Remove Nth Node From End of List
+// https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/
+//
 // 先记录链表总长度
-// 需要对链表进行两边遍历
+// 需要对链表进行两次遍历
+// 时间复杂度: O(n)
+// 空间复杂度: O(1)
 class Solution {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
@@ -68,15 +73,14 @@ public:
         dummyHead->next = head;
 
         int length = 0;
-        for(ListNode* cur = dummyHead->next ; cur != NULL ; cur = cur->next )
+        for(ListNode* cur = dummyHead->next ; cur != NULL ; cur = cur->next)
             length ++;
-        //cout<<length<<endl;
 
         int k = length - n;
-        assert( k >= 0 );
+        assert(k >= 0);
         ListNode* cur = dummyHead;
-        for( int i = 0 ; i < k ; i ++ )
-            cur = cur -> next;
+        for(int i = 0 ; i < k ; i ++)
+            cur = cur->next;
 
         ListNode* delNode = cur->next;
         cur->next = delNode->next;
@@ -99,7 +103,7 @@ int main() {
     head = Solution().removeNthFromEnd(head, 2);
     printLinkedList(head);
 
-    deleteLinkedList( head );
+    deleteLinkedList(head);
 
     return 0;
 }
