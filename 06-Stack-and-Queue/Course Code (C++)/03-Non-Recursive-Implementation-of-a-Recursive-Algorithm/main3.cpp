@@ -16,13 +16,15 @@ struct TreeNode {
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
 
-struct Command{
-    string s;   // go, print
-    TreeNode* node;
-    Command(string s, TreeNode* node): s(s), node(node){}
-};
-
 class Solution {
+
+private:
+    struct Command{
+        string s;   // go, print
+        TreeNode* node;
+        Command(string s, TreeNode* node): s(s), node(node){}
+    };
+
 public:
     vector<int> postorderTraversal(TreeNode* root) {
 
