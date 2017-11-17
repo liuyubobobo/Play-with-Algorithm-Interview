@@ -4,6 +4,8 @@
 using namespace std;
 
 /// 145. Binary Tree Postorder Traversal
+/// https://leetcode.com/problems/binary-tree-postorder-traversal/description/
+/// 二叉树的后序遍历
 
 /// Definition for a binary tree node.
 struct TreeNode {
@@ -18,17 +20,17 @@ public:
     vector<int> postorderTraversal(TreeNode* root) {
 
         vector<int> res;
-        __postorderTraversal( root , res );
+        __postorderTraversal(root, res);
         return res;
     }
 
 private:
-    void __postorderTraversal( TreeNode* node, vector<int> &res ){
+    void __postorderTraversal(TreeNode* node, vector<int> &res){
 
         if( node ){
-            __postorderTraversal( node->left, res );
-            __postorderTraversal( node->right, res );
-            res.push_back( node->val );
+            __postorderTraversal(node->left, res);
+            __postorderTraversal(node->right, res);
+            res.push_back(node->val);
         }
     }
 };

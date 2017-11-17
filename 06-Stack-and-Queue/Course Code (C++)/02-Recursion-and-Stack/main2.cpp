@@ -4,6 +4,8 @@
 using namespace std;
 
 /// 94. Binary Tree Inorder Traversal
+/// https://leetcode.com/problems/binary-tree-inorder-traversal/solution/
+/// 二叉树的中序遍历
 
 /// Definition for a binary tree node.
 struct TreeNode {
@@ -18,17 +20,17 @@ public:
     vector<int> inorderTraversal(TreeNode* root) {
 
         vector<int> res;
-        __inorderTraversal( root , res );
+        __inorderTraversal(root, res);
         return res;
     }
 
 private:
-    void __inorderTraversal( TreeNode* node, vector<int> &res ){
+    void __inorderTraversal(TreeNode* node, vector<int> &res){
 
         if( node ){
-            __inorderTraversal( node->left, res );
+            __inorderTraversal(node->left, res);
             res.push_back( node->val );
-            __inorderTraversal( node->right, res );
+            __inorderTraversal(node->right, res);
         }
     }
 };
