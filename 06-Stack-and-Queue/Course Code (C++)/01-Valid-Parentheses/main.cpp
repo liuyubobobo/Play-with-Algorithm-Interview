@@ -4,6 +4,10 @@
 
 using namespace std;
 
+// 20. Valid Parentheses
+// https://leetcode.com/problems/valid-parentheses/description/
+// 时间复杂度: O(n)
+// 空间复杂度: O(n)
 class Solution {
 public:
     bool isValid(string s) {
@@ -30,7 +34,7 @@ public:
                     match = '{';
                 }
 
-                if( c != match )
+                if(c != match)
                     return false;
             }
 
@@ -43,25 +47,25 @@ public:
 
 int main() {
 
-    if( Solution().isValid("()") )
-        cout<<"() is valid."<<endl;
+    if(Solution().isValid("()"))
+        cout << "() is valid." << endl;
     else
-        cout<<"() is invalid."<<endl;
+        cout << "() is invalid." << endl;
 
-    if( Solution().isValid("()[]{}") )
-        cout<<"()[]{} is valid."<<endl;
+    if(Solution().isValid("()[]{}"))
+        cout << "()[]{} is valid." << endl;
     else
-        cout<<"()[]{} is invalid."<<endl;
+        cout << "()[]{} is invalid." << endl;
 
-    if( Solution().isValid("(]") )
-        cout<<"(] is valid."<<endl;
+    if(Solution().isValid("(]"))
+        cout << "(] is valid." << endl;
     else
-        cout<<"(] is invalid."<<endl;
+        cout << "(] is invalid." << endl;
 
-    if( Solution().isValid("([)]") )
-        cout<<"([)] is valid."<<endl;
+    if(Solution().isValid("([)]"))
+        cout << "([)] is valid." << endl;
     else
-        cout<<"([)] is invalid."<<endl;
+        cout << "([)] is invalid." << endl;
 
     return 0;
 }
