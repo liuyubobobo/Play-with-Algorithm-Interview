@@ -3,7 +3,10 @@
 
 using namespace std;
 
+
 /// 145. Binary Tree Postorder Traversal
+/// https://leetcode.com/problems/binary-tree-postorder-traversal/description/
+/// 非递归的二叉树的后序遍历
 
 /// Definition for a binary tree node.
 struct TreeNode {
@@ -24,24 +27,24 @@ public:
     vector<int> postorderTraversal(TreeNode* root) {
 
         vector<int> res;
-        if( root == NULL )
+        if(root == NULL)
             return res;
 
         stack<Command> stack;
-        stack.push( Command("go", root) );
-        while( !stack.empty() ){
+        stack.push(Command("go", root) );
+        while(!stack.empty()){
             Command command = stack.top();
             stack.pop();
 
-            if( command.s == "print" )
-                res.push_back( command.node->val );
+            if(command.s == "print")
+                res.push_back(command.node->val);
             else{
-                assert( command.s == "go" );
-                stack.push( Command("print", command.node));
-                if( command.node->right)
-                    stack.push( Command("go",command.node->right));
-                if( command.node->left)
-                    stack.push( Command("go",command.node->left));
+                assert(command.s == "go");
+                stack.push(Command("print", command.node));
+                if(command.node->right)
+                    stack.push(Command("go",command.node->right));
+                if(command.node->left)
+                    stack.push(Command("go",command.node->left));
             }
         }
         return res;

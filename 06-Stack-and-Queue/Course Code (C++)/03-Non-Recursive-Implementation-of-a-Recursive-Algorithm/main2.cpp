@@ -4,6 +4,8 @@
 using namespace std;
 
 /// 94. Binary Tree Inorder Traversal
+/// https://leetcode.com/problems/binary-tree-inorder-traversal/solution/
+/// 非递归的二叉树的中序遍历
 
 /// Definition for a binary tree node.
 struct TreeNode {
@@ -13,13 +15,16 @@ struct TreeNode {
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
 
-struct Command{
-    string s;   // go, print
-    TreeNode* node;
-    Command(string s, TreeNode* node): s(s), node(node){}
-};
 
 class Solution {
+
+private:
+    struct Command{
+        string s;   // go, print
+        TreeNode* node;
+        Command(string s, TreeNode* node): s(s), node(node){}
+    };
+
 public:
     vector<int> inorderTraversal(TreeNode* root) {
 
@@ -28,20 +33,20 @@ public:
             return res;
 
         stack<Command> stack;
-        stack.push( Command("go", root) );
+        stack.push(Command("go", root));
         while( !stack.empty() ){
             Command command = stack.top();
             stack.pop();
 
-            if( command.s == "print" )
-                res.push_back( command.node->val );
+            if(command.s == "print")
+                res.push_back(command.node->val);
             else{
-                assert( command.s == "go" );
-                if( command.node->right)
-                    stack.push( Command("go",command.node->right));
-                stack.push( Command("print", command.node));
-                if( command.node->left)
-                    stack.push( Command("go",command.node->left));
+                assert(command.s == "go");
+                if(command.node->right)
+                    stack.push(Command("go",command.node->right));
+                stack.push(Command("print", command.node));
+                if(command.node->left)
+                    stack.push(Command("go",command.node->left));
             }
         }
         return res;
