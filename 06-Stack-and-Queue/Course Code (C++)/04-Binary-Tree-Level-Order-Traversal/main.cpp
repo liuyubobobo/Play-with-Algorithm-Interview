@@ -7,6 +7,9 @@ using namespace std;
 
 /// 102. Binary Tree Level Order Traversal
 /// https://leetcode.com/problems/binary-tree-level-order-traversal/description/
+/// 二叉树的层序遍历
+/// 时间复杂度: O(n), n为树的节点个数
+/// 空间复杂度: O(n)
 
 /// Definition for a binary tree node.
 struct TreeNode {
@@ -21,11 +24,11 @@ public:
     vector<vector<int>> levelOrder(TreeNode* root) {
 
         vector<vector<int>> res;
-        if( root == NULL )
+        if(root == NULL)
             return res;
 
         queue<pair<TreeNode*,int>> q;
-        q.push(make_pair(root, 0 ));
+        q.push(make_pair(root, 0));
 
         while(!q.empty()){
 
