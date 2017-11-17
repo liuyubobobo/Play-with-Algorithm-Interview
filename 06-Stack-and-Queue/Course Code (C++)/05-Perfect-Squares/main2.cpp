@@ -4,29 +4,34 @@
 
 using namespace std;
 
+// 279. Perfect Squares
+// https://leetcode.com/problems/perfect-squares/description/
 // 使用visited数组,记录每一个入队元素
+//
+// 时间复杂度: O(n)
+// 空间复杂度: O(n)
 class Solution {
 public:
     int numSquares(int n) {
 
-        queue< pair<int,int> > q;
-        q.push( make_pair( n , 0 ) );
+        queue<pair<int, int>> q;
+        q.push(make_pair(n, 0));
 
         vector<bool> visited(n+1, false);
         visited[n] = true;
 
-        while( !q.empty() ){
+        while(!q.empty()){
             int num = q.front().first;
             int step = q.front().second;
             q.pop();
 
-            if( num == 0 )
+            if(num == 0)
                 return step;
 
-            for( int i = 1 ; num - i*i >= 0 ; i ++ )
-                if( !visited[num-i*i] ){
-                    q.push( make_pair( num - i*i , step + 1 ) );
-                    visited[num-i*i] = true;
+            for(int i = 1; num - i * i >= 0; i ++)
+                if(!visited[num - i * i]){
+                    q.push(make_pair(num - i * i, step + 1));
+                    visited[num - i * i] = true;
                 }
         }
 
@@ -36,8 +41,8 @@ public:
 
 int main() {
 
-    cout<<Solution().numSquares(12)<<endl;
-    cout<<Solution().numSquares(13)<<endl;
+    cout << Solution().numSquares(12) << endl;
+    cout << Solution().numSquares(13) << endl;
 
     return 0;
 }
