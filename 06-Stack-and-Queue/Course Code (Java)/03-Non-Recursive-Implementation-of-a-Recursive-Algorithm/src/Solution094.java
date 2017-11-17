@@ -5,6 +5,8 @@ import java.util.Stack;
 /// 94. Binary Tree Inorder Traversal
 /// https://leetcode.com/problems/binary-tree-inorder-traversal/solution/
 /// 非递归二叉树的中序遍历
+/// 时间复杂度: O(n), n为树的节点个数
+/// 空间复杂度: O(h), h为树的高度
 public class Solution094 {
 
     // Definition for a binary tree node.
