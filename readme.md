@@ -84,12 +84,12 @@
 | 6-5 BFS和图的最短路径 Perfect Squares | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/06-Stack-and-Queue/Course%20Code%20(C%2B%2B)/05-Perfect-Squares/) | [Java源码](06-Stack-and-Queue/Course%20Code%20(Java)/05-Perfect-Squares/src/) |
 | 6-6 优先队列 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/06-Stack-and-Queue/Course%20Code%20(C%2B%2B)/06-Priority-Queue/) | [Java源码](06-Stack-and-Queue/Course%20Code%20(Java)/06-Priority-Queue/src/) |
 | 6-7 优先队列相关的算法问题 Top K Frequent Elements | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/06-Stack-and-Queue/Course%20Code%20(C%2B%2B)/07-Top-K-Frequent-Elements/) | [Java源码](06-Stack-and-Queue/Course%20Code%20(Java)/07-Top-K-Frequent-Elements/src/) |
-| 补充代码1：教科书经典前序非递归遍历 | [C++源码] | [Java源码] |
+| 补充代码1：教科书经典前序非递归遍历 | [C++源码](06-Stack-and-Queue/Course%20Code%20(C%2B%2B)/Optional-01-Classic-Non-Recursive-Preorder-Traversal/) | [Java源码](06-Stack-and-Queue/Course%20Code%20(Java)/Optional-01-Classic-Non-Recursive-Preorder-Traversal/src/) |
 | 补充代码2：教科书经典中序非递归遍历 | [C++源码] | [Java源码] |
 | 补充代码3：教科书经典后序非递归遍历 | [C++源码] | [Java源码] |
-| **第七章：二叉树和递归** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/07-Binary-Tree-and-Recursion/Course%20Code%20(C%2B%2B)) | [章节Java源码] |
-| 7-1 二叉树天然的递归结构 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/07-Binary-Tree-and-Recursion/Course%20Code%20(C%2B%2B)/01-Maximum-Depth-of-Binary-Tree) | [Java源码] |
-| 7-2 一个简单的二叉树问题引发的血案 Invert Binary Tree | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/07-Binary-Tree-and-Recursion/Course%20Code%20(C%2B%2B)/02-Invert-Binary-Tree) | [Java源码] |
+| **第七章：二叉树和递归** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/07-Binary-Tree-and-Recursion/Course%20Code%20(C%2B%2B)/) | [章节Java源码](07-Binary-Tree-and-Recursion/Course%20Code%20(Java)/) |
+| 7-1 二叉树天然的递归结构 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/07-Binary-Tree-and-Recursion/Course%20Code%20(C%2B%2B)/01-Maximum-Depth-of-Binary-Tree/) | [Java源码](07-Binary-Tree-and-Recursion/Course%20Code%20(Java)/01-Maximum-Depth-of-Binary-Tree/src) |
+| 7-2 一个简单的二叉树问题引发的血案 Invert Binary Tree | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/07-Binary-Tree-and-Recursion/Course%20Code%20(C%2B%2B)/02-Invert-Binary-Tree/) | [Java源码](07-Binary-Tree-and-Recursion/Course%20Code%20(Java)/02-Invert-Binary-Tree/src/) |
 | 7-3 注意递归的终止条件 Path Sum | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/07-Binary-Tree-and-Recursion/Course%20Code%20(C%2B%2B)/03-Path-Sum) | [Java源码] |
 | 7-4 定义递归问题 Binary Tree Path | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/07-Binary-Tree-and-Recursion/Course%20Code%20(C%2B%2B)/04-Binary-Tree-Paths) | [Java源码] |
 | 7-5 稍复杂的递归逻辑 Path Sum III | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/07-Binary-Tree-and-Recursion/Course%20Code%20(C%2B%2B)/05-Path-Sum-III) | [Java源码] |
