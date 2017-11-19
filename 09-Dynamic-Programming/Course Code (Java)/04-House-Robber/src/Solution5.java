@@ -35,6 +35,6 @@ public class Solution5 {
     public static void main(String[] args) {
 
         int nums[] = {2, 1};
-        System.out.println((new Solution1()).rob(nums));
+        System.out.println((new Solution5()).rob(nums));
     }
 }
