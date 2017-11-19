@@ -26,7 +26,7 @@ public class Solution3 {
 
     public static void main(String[] args) {
 
-        System.out.println((new Solution1()).integerBreak(2));
-        System.out.println((new Solution1()).integerBreak(10));
+        System.out.println((new Solution3()).integerBreak(2));
+        System.out.println((new Solution3()).integerBreak(10));
     }
 }

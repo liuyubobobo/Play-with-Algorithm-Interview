@@ -5,11 +5,10 @@ using namespace std;
 
 /// 198. House Robber
 /// https://leetcode.com/problems/house-robber/description/
-/// 记忆化搜索
-/// 时间复杂度: O(n^2)
+/// 记忆化搜索, 优化状态转移
+/// 时间复杂度: O(n)
 /// 空间复杂度: O(n)
 class Solution {
-
 private:
     // memo[i] 表示考虑抢劫 nums[i...n) 所能获得的最大收益
     vector<int> memo;
@@ -23,11 +22,10 @@ private:
         if(memo[index] != -1)
             return memo[index];
 
-        int res = 0;
-        for(int i = index ; i < nums.size() ; i ++)
-            res = max(res, nums[i] + tryRob(nums, i + 2));
-        memo[index] = res;
-        return res;
+        // 或者当前房子放弃, 从下一个房子开始考虑
+        // 或者抢劫当前的房子, 从i+2以后的房子开始考虑
+        return memo[index] = max(tryRob(nums, index + 1),
+                                 nums[index] + tryRob(nums, index + 2));
     }
 
 public:
