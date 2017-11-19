@@ -1,23 +1,21 @@
-#include <iostream>
-#include <cassert>
-
-using namespace std;
-
 /// 343. Integer Break
 /// https://leetcode.com/problems/integer-break/description/
 /// 暴力搜索
 /// 在Leetcode中提交这个版本的代码会超时! (Time Limit Exceeded)
 /// 时间复杂度: O(n^n)
 /// 空间复杂度: O(n)
-class Solution {
+public class Solution1 {
 
-private:
-    int max3(int a, int b, int c){
-        return max(a, max(b, c));
+    public int integerBreak(int n) {
+
+        if(n < 1)
+            throw new IllegalArgumentException("n should be greater than zero");
+
+        return breakInteger(n);
     }
 
     // 将n进行分割(至少分割两部分), 可以获得的最大乘积
-    int breakInteger(int n){
+    private int breakInteger(int n){
 
         if(n == 1)
             return 1;
@@ -28,17 +26,13 @@ private:
         return res;
     }
 
-public:
-    int integerBreak(int n) {
-        assert(n >= 1);
-        return breakInteger(n);
+    private int max3(int a, int b, int c){
+        return Math.max(a, Math.max(b, c));
     }
-};
 
-int main() {
+    public static void main(String[] args) {
 
-    cout << Solution().integerBreak(2) << endl;
-    cout << Solution().integerBreak(10) << endl;
-
-    return 0;
+        System.out.println((new Solution1()).integerBreak(2));
+        System.out.println((new Solution1()).integerBreak(10));
+    }
 }
