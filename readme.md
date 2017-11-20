@@ -122,9 +122,9 @@
 | 补充代码1：LIS问题的O(nlogn)解法 | [整理中] | [敬请期待] |
 | 补充代码2：更多和背包问题相关 | [整理中] | [敬请期待] |
 | 补充代码3：另一个经典DP模型：回文子串数 | [整理中] | [敬请期待] |
-| **第十章：贪心算法** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/10-Greedy-Algorithms) | [章节Java源码] |
-| 10-1 贪心基础 Assign Cookies | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/10-Greedy-Algorithms/Course%20Code%20(C%2B%2B)/01-Assign-Cookies/) | [Java源码] |
-| 10-2 贪心算法与动态规划的关系 Non-overlapping Intervals | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/10-Greedy-Algorithms/Course%20Code%20(C%2B%2B)/02-Non-overlapping-Intervals/) | [Java源码] |
+| **第十章：贪心算法** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/10-Greedy-Algorithms/Course%20Code%20(C%2B%2B)/) | [章节Java源码](10-Greedy-Algorithms/Course%20Code%20(Java)/) |
+| 10-1 贪心基础 Assign Cookies | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/10-Greedy-Algorithms/Course%20Code%20(C%2B%2B)/01-Assign-Cookies/) | [Java源码](10-Greedy-Algorithms/Course%20Code%20(Java)/01-Assign-Cookies/src/) |
+| 10-2 贪心算法与动态规划的关系 Non-overlapping Intervals | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/10-Greedy-Algorithms/Course%20Code%20(C%2B%2B)/02-Non-overlapping-Intervals/) | [Java源码](10-Greedy-Algorithms/Course%20Code%20(Java)/02-Non-overlapping-Intervals/src/) |
 | 10-3 贪心选择性质的证明 | [无代码] | [无代码] |
 | **第十一章：课程结语** | [无代码] | [无代码] |
 | 11-1 结语 | [无代码] | [无代码] |
