@@ -76,6 +76,7 @@
 | 5-4 复杂的穿针引线 Swap Nodes in Pairs | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/05-About-Linked-List/Course%20Code%20(C%2B%2B)/04-Swap-Nodes-in-Pairs/) | [Java源码](05-About-Linked-List/Course%20Code%20(Java)/04-Swap-Nodes-in-Pairs/src/) |
 | 5-5 不仅仅是穿针引线 Delete Node in a Linked List | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/05-About-Linked-List/Course%20Code%20(C%2B%2B)/05-Delete-Node-in-a-Linked-List/) | [Java源码](05-About-Linked-List/Course%20Code%20(Java)/05-Delete-Node-in-a-Linked-List/src/) |
 | 5-6 链表与双指针 Remove Nth Node From End of List | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/05-About-Linked-List/Course%20Code%20(C%2B%2B)/06-Remove-Nth-Node-From-End-of-List/) | [Java源码](05-About-Linked-List/Course%20Code%20(Java)/06-Remove-Nth-Node-From-End-of-List/src/) |
+| 补充代码1：Floyd's 环检测算法 | [C++源码] | [Java源码] |
 | **第六章：栈，队列，优先队列** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/06-Stack-and-Queue/Course%20Code%20(C%2B%2B)/) | [章节Java源码](06-Stack-and-Queue/Course%20Code%20(Java)/) |
 | 6-1 栈的基础应用 Valid Parentheses | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/06-Stack-and-Queue/Course%20Code%20(C%2B%2B)/01-Valid-Parentheses/) | [Java源码](06-Stack-and-Queue/Course%20Code%20(Java)/01-Valid-Parentheses/src/) |
 | 6-2 栈和递归的紧密联系 Binary Tree Preoder, Inorder and Posorder Traversal | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/06-Stack-and-Queue/Course%20Code%20(C%2B%2B)/02-Recursion-and-Stack/) | [Java源码](06-Stack-and-Queue/Course%20Code%20(Java)/02-Recursion-and-Stack/src/) |
@@ -95,6 +96,7 @@
 | 7-5 稍复杂的递归逻辑 Path Sum III | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/07-Binary-Tree-and-Recursion/Course%20Code%20(C%2B%2B)/05-Path-Sum-III/) | [Java源码](07-Binary-Tree-and-Recursion/Course%20Code%20(Java)/05-Path-Sum-III/src/) |
 | 7-6 二分搜索树中问题 Lowest Common Ancestor of a Binary Search Tree | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/07-Binary-Tree-and-Recursion/Course%20Code%20(C%2B%2B)/06-Lowest-Common-Ancestor-of-a-Binary-Search-Tree/) | [Java源码](07-Binary-Tree-and-Recursion/Course%20Code%20(Java)/06-Lowest-Common-Ancestor-of-a-Binary-Search-Tree/) |
 | 补充代码1：使用数组生成二叉树测试用例 | [整理中] | [敬请期待] |
+| 补充代码2：LCA问题 | [整理中] | [敬请期待] |
 | **第八章：递归和回溯法** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/08-Recurion-and-Backstracking/Course%20Code%20(C%2B%2B)/) | [章节Java源码](08-Recurion-and-Backstracking/Course%20Code%20(Java)/) |
 | 8-1 树形问题 Letter Combinations of a Phone Number | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/08-Recurion-and-Backstracking/Course%20Code%20(C%2B%2B)/01-02-Letter-Combinations-of-a-Phone-Number/) | [Java源码](08-Recurion-and-Backstracking/Course%20Code%20(Java)/01-02-Letter-Combinations-of-a-Phone-Number/src/) |
 | 8-2 什么是回溯 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/08-Recurion-and-Backstracking/Course%20Code%20(C%2B%2B)/01-02-Letter-Combinations-of-a-Phone-Number/) | [Java源码](08-Recurion-and-Backstracking/Course%20Code%20(Java)/01-02-Letter-Combinations-of-a-Phone-Number/src/) |
@@ -107,16 +109,19 @@
 | 补充代码1：更多和生成排列相关 | [整理中] | [敬请期待] |
 | 补充代码2：更多和组合相关 | [整理中] | [敬请期待] |
 | 补充代码3：更多和八皇后问题相关 | [整理中] | [敬请期待] |
-| **第九章：动态规划基础** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/09-Dynamic-Programming/Course%20Code%20(C%2B%2B)) | [章节Java源码] |
-| 9-1 什么是动态规划 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/09-Dynamic-Programming/Course%20Code%20(C%2B%2B)/01-Fibonacci) | [Java源码] |
-| 9-2 第一个动态规划问题 Climbing Stairs | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/09-Dynamic-Programming/Course%20Code%20(C%2B%2B)/02-Climbing-Stairs) | [Java源码] |
-| 9-3 发现重叠子问题 Integer Break | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/09-Dynamic-Programming/Course%20Code%20(C%2B%2B)/03-Integer-Break) | [Java源码] |
-| 9-4 状态的定义和状态转移 House Robber | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/09-Dynamic-Programming/Course%20Code%20(C%2B%2B)/04-House-Robber) | [Java源码] |
-| 9-5 0-1背包问题 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/09-Dynamic-Programming/Course%20Code%20(C%2B%2B)/05-0-1-knapsack) | [Java源码] |
-| 9-6 0-1背包问题的优化和变种 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/09-Dynamic-Programming/Course%20Code%20(C%2B%2B)/06-0-1-knapsack-optimized) | [Java源码] |
-| 9-7 面试中的0-1背包问题 Partition Equal Subset Sum | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/09-Dynamic-Programming/Course%20Code%20(C%2B%2B)/07-Partition-Equal-Subset-Sum) | [Java源码] |
-| 9-8 LIS问题 Longest Increasing Subsequence | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/09-Dynamic-Programming/Course%20Code%20(C%2B%2B)/08-Longest-Increasing-Subsequence) | [Java源码] |
-| 9-9 LCS，最短路，求动态规划的具体解以及更多 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/09-Dynamic-Programming/Course%20Code%20(C%2B%2B)/09-Longest-Common-Subsequence) | [Java源码] |
+| **第九章：动态规划基础** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/09-Dynamic-Programming/Course%20Code%20(C%2B%2B)/) | [章节Java源码](09-Dynamic-Programming/Course%20Code%20(Java)/) |
+| 9-1 什么是动态规划 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/09-Dynamic-Programming/Course%20Code%20(C%2B%2B)/01-Fibonacci/) | [Java源码](09-Dynamic-Programming/Course%20Code%20(Java)/01-Fibonacci/src/) |
+| 9-2 第一个动态规划问题 Climbing Stairs | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/09-Dynamic-Programming/Course%20Code%20(C%2B%2B)/02-Climbing-Stairs/) | [Java源码](09-Dynamic-Programming/Course%20Code%20(Java)/02-Climbing-Stairs/src/) |
+| 9-3 发现重叠子问题 Integer Break | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/09-Dynamic-Programming/Course%20Code%20(C%2B%2B)/03-Integer-Break/) | [Java源码](09-Dynamic-Programming/Course%20Code%20(Java)/03-Integer-Break/src/) |
+| 9-4 状态的定义和状态转移 House Robber | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/09-Dynamic-Programming/Course%20Code%20(C%2B%2B)/04-House-Robber/) | [Java源码](09-Dynamic-Programming/Course%20Code%20(Java)/04-House-Robber/src/) |
+| 9-5 0-1背包问题 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/09-Dynamic-Programming/Course%20Code%20(C%2B%2B)/05-0-1-knapsack/) | [Java源码](09-Dynamic-Programming/Course%20Code%20(Java)/05-0-1-knapsack/src/) |
+| 9-6 0-1背包问题的优化和变种 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/09-Dynamic-Programming/Course%20Code%20(C%2B%2B)/06-0-1-knapsack-optimized/) | [Java源码](09-Dynamic-Programming/Course%20Code%20(Java)/06-0-1-knapsack-optimized/src/) |
+| 9-7 面试中的0-1背包问题 Partition Equal Subset Sum | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/09-Dynamic-Programming/Course%20Code%20(C%2B%2B)/07-Partition-Equal-Subset-Sum/) | [Java源码](09-Dynamic-Programming/Course%20Code%20(Java)/07-Partition-Equal-Subset-Sum/src/) |
+| 9-8 LIS问题 Longest Increasing Subsequence | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/09-Dynamic-Programming/Course%20Code%20(C%2B%2B)/08-Longest-Increasing-Subsequence/) | [Java源码](09-Dynamic-Programming/Course%20Code%20(Java)/08-Longest-Increasing-Subsequence/src/) |
+| 9-9 LCS，最短路，求动态规划的具体解以及更多 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/09-Dynamic-Programming/Course%20Code%20(C%2B%2B)/09-Longest-Common-Subsequence/) | [Java源码](09-Dynamic-Programming/Course%20Code%20(Java)/09-Longest-Common-Subsequence/src/) |
+| 补充代码1：LIS问题的O(nlogn)解法 | [整理中] | [敬请期待] |
+| 补充代码2：更多和背包问题相关 | [整理中] | [敬请期待] |
+| 补充代码3：另一个经典DP模型：回文子串数 | [整理中] | [敬请期待] |
 | **第十章：贪心算法** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/10-Greedy-Algorithms) | [章节Java源码] |
 | 10-1 贪心基础 Assign Cookies | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/10-Greedy-Algorithms/Course%20Code%20(C%2B%2B)/01-Assign-Cookies/) | [Java源码] |
 | 10-2 贪心算法与动态规划的关系 Non-overlapping Intervals | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/10-Greedy-Algorithms/Course%20Code%20(C%2B%2B)/02-Non-overlapping-Intervals/) | [Java源码] |
@@ -152,7 +157,7 @@
 | 4-6 灵活选择键值 Number of Boomerangs | 447 | 149 719 | | |
 | 4-7 查找表和滑动窗口 Contain Duplicate II | 219 | 217 | | |
 | 4-8 二分搜索树底层实现的顺序性 Contain Duplicate III | 220 | [无] | 155 716 | |
-| 补充1：查找表的更多问题 | | | | 128 |
+| 补充1：查找表的更多问题 | [无] | [无] | | 128 |
 | **第五章 在链表中穿针引线** | | | | |
 | 5-1 链表，在节点间穿针引线 Reverse Linked List | 206 | 92 | | |
 | 5-2 测试你的链表程序 | 206 | 83 86 328 2 445 | | |
@@ -186,7 +191,7 @@
 | 8-6 二维平面上的回溯法 Word Search | 79 | [无] | | |
 | 8-7 floodfill算法，一类经典问题 Number of Islands | 200 | 130 417 | 695 694 | 711 |
 | 8-8 回溯法是经典人工智能的基础 N Queens | 51 | 52 37 | | |
-| 补充1 其他递归问题 | | | | 390 |
+| 补充1 其他递归问题 | [无] | [无] | | 390 |
 | **第九章 动态规划基础** | | | | |
 | 9-1 什么是动态规划 | [无] | [无] | | |
 | 9-2 第一个动态规划问题 Climbing Stairs | 70 | 120 64 | 123 309 714 | |
@@ -198,7 +203,7 @@
 | 9-8 LIS问题 Longest Increasing Subsequence | 300 | 376 | 673 | |
 | 9-9 LCS，最短路，求动态规划的具体解以及更多 | [无] | [无] | 583 712 718 | |
 | 补充1：状态压缩DP | [无] | [无] | 698 | |
-| 补充2：更多动态规划问题 | | | 188 | 727 |
+| 补充2：更多动态规划问题 | [无] | [无] | 188 | 727 |
 | **第十章 贪心算法** | | | | |
 | 10-1 贪心基础 Assign Cookies | 455 | 392 | | |
 | 10-2 贪心算法与动态规划的关系 Non-overlapping Intervals | 435 | [无] | | |

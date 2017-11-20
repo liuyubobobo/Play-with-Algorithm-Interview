@@ -2,24 +2,29 @@
 #include <vector>
 using namespace std;
 
+/// 300. Longest Increasing Subsequence
+/// https://leetcode.com/problems/longest-increasing-subsequence/description/
+/// 动态规划
+/// 时间复杂度: O(n^2)
+/// 空间复杂度: O(n)
 class Solution {
 
 public:
     int lengthOfLIS(vector<int>& nums) {
 
-        if( nums.size() == 0 )
+        if(nums.size() == 0)
             return 0;
 
         // memo[i] 表示以 nums[i] 为结尾的最长上升子序列的长度
-        vector<int >memo( nums.size() , 1 );
-        for( int i = 1 ; i < nums.size() ; i ++ )
-            for( int j = 0 ; j < i ; j ++ )
-                if( nums[i] > nums[j] )
-                    memo[i] = max( memo[i] , 1 + memo[j] );
+        vector<int> memo(nums.size(), 1);
+        for(int i = 1 ; i < nums.size() ; i ++)
+            for(int j = 0 ; j < i ; j ++)
+                if(nums[i] > nums[j])
+                    memo[i] = max(memo[i], 1 + memo[j]);
 
         int res = memo[0];
-        for( int i = 1 ; i < nums.size() ; i ++ )
-            res = max( res , memo[i] );
+        for(int i = 1 ; i < nums.size() ; i ++)
+            res = max(res, memo[i]);
 
         return res;
     }
@@ -27,28 +32,60 @@ public:
 
 int main() {
 
-    int nums1[] = {10, 9, 2, 5, 3, 7, 101, 18}; // 4
+    int nums1[] = {10, 9, 2, 5, 3, 7, 101, 18};
     vector<int> vec1(nums1, nums1 + sizeof(nums1)/sizeof(int));
+    cout << Solution().lengthOfLIS(vec1) << endl;
+    // 4
 
-    cout<<Solution().lengthOfLIS( vec1 )<<endl;
+    // ---
 
-
-    int nums2[] = {4, 10, 4, 3, 8, 9};  // 3
+    int nums2[] = {4, 10, 4, 3, 8, 9};
     vector<int> vec2(nums2, nums2 + sizeof(nums2)/sizeof(int));
+    cout << Solution().lengthOfLIS(vec2) << endl;
+    // 3
 
-    cout<<Solution().lengthOfLIS( vec2 )<<endl;
+    // ---
 
-
-    int nums3[] = {2, 2};   // 1
+    int nums3[] = {2, 2};
     vector<int> vec3(nums3, nums3 + sizeof(nums3)/sizeof(int));
+    cout << Solution().lengthOfLIS(vec3) << endl;
+    // 1
 
-    cout<<Solution().lengthOfLIS( vec3 )<<endl;
+    // ---
 
-    int nums4[] = {1, 3, 6, 7, 9, 4, 10, 5, 6}; // 6
+    int nums4[] = {1, 3, 6, 7, 9, 4, 10, 5, 6};
     vector<int> vec4(nums4, nums4 + sizeof(nums4)/sizeof(int));
+    cout << Solution().lengthOfLIS(vec4) << endl;
+    // 6
 
-    cout<<Solution().lengthOfLIS( vec4 )<<endl;
+    return 0;
+}int main() {
 
+    int nums1[] = {10, 9, 2, 5, 3, 7, 101, 18};
+    vector<int> vec1(nums1, nums1 + sizeof(nums1)/sizeof(int));
+    cout << Solution().lengthOfLIS(vec1) << endl;
+    // 4
+
+    // ---
+
+    int nums2[] = {4, 10, 4, 3, 8, 9};
+    vector<int> vec2(nums2, nums2 + sizeof(nums2)/sizeof(int));
+    cout << Solution().lengthOfLIS(vec2) << endl;
+    // 3
+
+    // ---
+
+    int nums3[] = {2, 2};
+    vector<int> vec3(nums3, nums3 + sizeof(nums3)/sizeof(int));
+    cout << Solution().lengthOfLIS(vec3) << endl;
+    // 1
+
+    // ---
+
+    int nums4[] = {1, 3, 6, 7, 9, 4, 10, 5, 6};
+    vector<int> vec4(nums4, nums4 + sizeof(nums4)/sizeof(int));
+    cout << Solution().lengthOfLIS(vec4) << endl;
+    // 6
 
     return 0;
 }
