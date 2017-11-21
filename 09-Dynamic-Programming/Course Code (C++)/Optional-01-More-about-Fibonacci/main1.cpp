@@ -17,8 +17,8 @@ using namespace std;
 /// 依靠的依然是, 求第n个斐波那契数, 我们只需要n-1和n-2两个斐波那契数,
 /// 更小的斐波那契数不需要一直保存。
 ///
-/// Time Complexity: O(n)
-/// Space Complexity: O(1)
+/// 时间复杂度: O(n)
+/// 空间复杂度: O(1)
 class Solution {
 
 public:

@@ -13,8 +13,8 @@ using namespace std;
 /// 幂运算可以使用分治法, 优化为O(logn)的复杂度
 /// 具体该方法的证明, 有兴趣的同学可以自行在互联网上搜索学习。
 ///
-/// Time Complexity: O(logn)
-/// Space Complexity: O(1)
+/// 时间复杂度: O(logn)
+/// 空间复杂度: O(1)
 class Solution {
 
 public:

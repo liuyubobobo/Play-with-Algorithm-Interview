@@ -17,8 +17,8 @@ using namespace std;
 /// 注意: 这个方法的时间复杂度依然是O(logn)的,因为数的幂运算也需要logn的时间
 /// 但这个方法快于使用矩阵的幂运算符的方法
 ///
-/// Time Complexity: O(logn)
-/// Space Complexity: O(1)
+/// 时间复杂度: O(logn)
+/// 空间复杂度: O(1)
 class Solution {
 
 public:
