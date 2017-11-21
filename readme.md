@@ -88,6 +88,7 @@
 | 补充代码1：教科书经典前序非递归遍历 | [C++源码](06-Stack-and-Queue/Course%20Code%20(C%2B%2B)/Optional-01-Classic-Non-Recursive-Preorder-Traversal/) | [Java源码](06-Stack-and-Queue/Course%20Code%20(Java)/Optional-01-Classic-Non-Recursive-Preorder-Traversal/src/) |
 | 补充代码2：教科书经典中序非递归遍历 | [C++源码] | [Java源码] |
 | 补充代码3：教科书经典后序非递归遍历 | [C++源码] | [Java源码] |
+| 补充代码4：双向广度优先搜索 Word Ladder | [C++源码] | [Java源码] |
 | **第七章：二叉树和递归** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/07-Binary-Tree-and-Recursion/Course%20Code%20(C%2B%2B)/) | [章节Java源码](07-Binary-Tree-and-Recursion/Course%20Code%20(Java)/) |
 | 7-1 二叉树天然的递归结构 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/07-Binary-Tree-and-Recursion/Course%20Code%20(C%2B%2B)/01-Maximum-Depth-of-Binary-Tree/) | [Java源码](07-Binary-Tree-and-Recursion/Course%20Code%20(Java)/01-Maximum-Depth-of-Binary-Tree/src) |
 | 7-2 一个简单的二叉树问题引发的血案 Invert Binary Tree | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/07-Binary-Tree-and-Recursion/Course%20Code%20(C%2B%2B)/02-Invert-Binary-Tree/) | [Java源码](07-Binary-Tree-and-Recursion/Course%20Code%20(Java)/02-Invert-Binary-Tree/src/) |
@@ -119,9 +120,10 @@
 | 9-7 面试中的0-1背包问题 Partition Equal Subset Sum | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/09-Dynamic-Programming/Course%20Code%20(C%2B%2B)/07-Partition-Equal-Subset-Sum/) | [Java源码](09-Dynamic-Programming/Course%20Code%20(Java)/07-Partition-Equal-Subset-Sum/src/) |
 | 9-8 LIS问题 Longest Increasing Subsequence | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/09-Dynamic-Programming/Course%20Code%20(C%2B%2B)/08-Longest-Increasing-Subsequence/) | [Java源码](09-Dynamic-Programming/Course%20Code%20(Java)/08-Longest-Increasing-Subsequence/src/) |
 | 9-9 LCS，最短路，求动态规划的具体解以及更多 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/09-Dynamic-Programming/Course%20Code%20(C%2B%2B)/09-Longest-Common-Subsequence/) | [Java源码](09-Dynamic-Programming/Course%20Code%20(Java)/09-Longest-Common-Subsequence/src/) |
-| 补充代码1：LIS问题的O(nlogn)解法 | [整理中] | [敬请期待] |
-| 补充代码2：更多和背包问题相关 | [整理中] | [敬请期待] |
-| 补充代码3：另一个经典DP模型：回文子串数 | [整理中] | [敬请期待] |
+| 补充代码1：更多和斐波那契数相关 | [整理中] | [敬请期待] |
+| 补充代码2：LIS问题的O(nlogn)解法 | [整理中] | [敬请期待] |
+| 补充代码3：更多和背包问题相关 | [整理中] | [敬请期待] |
+| 补充代码4：另一个经典DP模型：回文子串数 | [整理中] | [敬请期待] |
 | **第十章：贪心算法** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/10-Greedy-Algorithms/Course%20Code%20(C%2B%2B)/) | [章节Java源码](10-Greedy-Algorithms/Course%20Code%20(Java)/) |
 | 10-1 贪心基础 Assign Cookies | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/10-Greedy-Algorithms/Course%20Code%20(C%2B%2B)/01-Assign-Cookies/) | [Java源码](10-Greedy-Algorithms/Course%20Code%20(Java)/01-Assign-Cookies/src/) |
 | 10-2 贪心算法与动态规划的关系 Non-overlapping Intervals | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/10-Greedy-Algorithms/Course%20Code%20(C%2B%2B)/02-Non-overlapping-Intervals/) | [Java源码](10-Greedy-Algorithms/Course%20Code%20(Java)/02-Non-overlapping-Intervals/src/) |
@@ -140,7 +142,7 @@
 | **第三章 数组中的问题最常见** | | | | |
 | 3-1 从二分查找法看如何写出正确的程序 | [无] | [无] | | |
 | 3-2 改变变量定义，依然可以写出正确的算法 | [无] | [无] | 34 | |
-| 3-3 在LeetCode上解决第一个问题 Move Zeros | 283 | [无] | | |
+| 3-3 在LeetCode上解决第一个问题 Move Zeros | 283 | [无] | 728 | |
 | 3-4 即使简单的问题，也有很多优化的思路 | 283 | 27 26 80 | | |
 | 3-5 三路快排partition思路的应用 Sort Color | 75 | 88 215 | | |
 | 3-6 对撞指针 Two Sum II - Input Array is Sorted | 167 | 125 344 345 11 | | |
@@ -156,7 +158,7 @@
 | 4-5 灵活选择键值 4Sum II | 454 | 49 | 697 | |
 | 4-6 灵活选择键值 Number of Boomerangs | 447 | 149 719 | | |
 | 4-7 查找表和滑动窗口 Contain Duplicate II | 219 | 217 | | |
-| 4-8 二分搜索树底层实现的顺序性 Contain Duplicate III | 220 | [无] | 155 716 | |
+| 4-8 二分搜索树底层实现的顺序性 Contain Duplicate III | 220 | [无] | 155 716 729 | |
 | 补充1：查找表的更多问题 | [无] | [无] | | 128 |
 | **第五章 在链表中穿针引线** | | | | |
 | 5-1 链表，在节点间穿针引线 Reverse Linked List | 206 | 92 | | |
