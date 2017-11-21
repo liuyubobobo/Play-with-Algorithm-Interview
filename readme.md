@@ -120,7 +120,7 @@
 | 9-7 面试中的0-1背包问题 Partition Equal Subset Sum | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/09-Dynamic-Programming/Course%20Code%20(C%2B%2B)/07-Partition-Equal-Subset-Sum/) | [Java源码](09-Dynamic-Programming/Course%20Code%20(Java)/07-Partition-Equal-Subset-Sum/src/) |
 | 9-8 LIS问题 Longest Increasing Subsequence | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/09-Dynamic-Programming/Course%20Code%20(C%2B%2B)/08-Longest-Increasing-Subsequence/) | [Java源码](09-Dynamic-Programming/Course%20Code%20(Java)/08-Longest-Increasing-Subsequence/src/) |
 | 9-9 LCS，最短路，求动态规划的具体解以及更多 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/09-Dynamic-Programming/Course%20Code%20(C%2B%2B)/09-Longest-Common-Subsequence/) | [Java源码](09-Dynamic-Programming/Course%20Code%20(Java)/09-Longest-Common-Subsequence/src/) |
-| 补充代码1：更多和斐波那契数相关 | [整理中] | [敬请期待] |
+| 补充代码1：更多和斐波那契数相关 | [C++](09-Dynamic-Programming/Course%20Code%20(C%2B%2B)/Optional-01-More-about-Fibonacci/) | [Java](09-Dynamic-Programming/Course%20Code%20(Java)/Optional-01-More-about-Fibonacci/src/) |
 | 补充代码2：LIS问题的O(nlogn)解法 | [整理中] | [敬请期待] |
 | 补充代码3：更多和背包问题相关 | [整理中] | [敬请期待] |
 | 补充代码4：另一个经典DP模型：回文子串数 | [整理中] | [敬请期待] |
