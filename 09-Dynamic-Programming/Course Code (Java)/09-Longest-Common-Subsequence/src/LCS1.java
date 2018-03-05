@@ -75,6 +75,10 @@ public class LCS1 {
 
         String s1 = "ABCDGH";
         String s2 = "AEDFHR";
-        System.out.print((new LCS1()).lcs(s1, s2));
+        System.out.println((new LCS1()).lcs(s1, s2));
+
+        s1 = "AAACCGTGAGTTATTCGTTCTAGAA";
+        s2 = "CACCCCTAAGGTACCTTTGGTTC";
+        System.out.println((new LCS1()).lcs(s1, s2));
     }
 }
