@@ -1,3 +1,7 @@
+/// Source : https://leetcode.com/problems/binary-tree-preorder-traversal/description/
+/// Author : liuyubobobo
+/// Time   : 2017-11-17
+
 #include <iostream>
 #include <vector>
 #include <stack>
@@ -13,11 +17,9 @@ struct TreeNode {
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
 
-// 144. Binary Tree Preorder Traversal
-// https://leetcode.com/problems/binary-tree-preorder-traversal/description/
-// 经典二叉树非递归前序遍历
-// 时间复杂度: O(n), n 为二叉树节点个数
-// 空间复杂度: O(h), h 为二叉树高度
+// Classic Non-Recursive algorithm for preorder traversal
+// Time Complexity: O(n), n is the node number in the tree
+// Space Complexity: O(h), h is the height of the tree
 class Solution {
 
 public:

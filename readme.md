@@ -90,9 +90,10 @@
 | 6-6 优先队列 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/06-Stack-and-Queue/Course%20Code%20(C%2B%2B)/06-Priority-Queue/) | [Java源码](06-Stack-and-Queue/Course%20Code%20(Java)/06-Priority-Queue/src/) |
 | 6-7 优先队列相关的算法问题 Top K Frequent Elements | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/06-Stack-and-Queue/Course%20Code%20(C%2B%2B)/07-Top-K-Frequent-Elements/) | [Java源码](06-Stack-and-Queue/Course%20Code%20(Java)/07-Top-K-Frequent-Elements/src/) |
 | 补充代码1：教科书经典前序非递归遍历 | [C++源码](06-Stack-and-Queue/Course%20Code%20(C%2B%2B)/Optional-01-Classic-Non-Recursive-Preorder-Traversal/) | [Java源码](06-Stack-and-Queue/Course%20Code%20(Java)/Optional-01-Classic-Non-Recursive-Preorder-Traversal/src/) |
-| 补充代码2：教科书经典中序非递归遍历 | [C++源码] | [Java源码] |
-| 补充代码3：教科书经典后序非递归遍历 | [C++源码] | [Java源码] |
-| 补充代码4：双向广度优先搜索 Word Ladder | [C++源码] | [Java源码] |
+| 补充代码2：教科书经典中序非递归遍历 | [C++源码](06-Stack-and-Queue/Course%20Code%20(C%2B%2B)/Optional-02-Classic-Non-Recursive-Inorder-Traversal/) | [Java源码](06-Stack-and-Queue/Course%20Code%20(Java)/Optional-02-Classic-Non-Recursive-Inorder-Traversal/src/) |
+| 补充代码3：教科书经典后序非递归遍历 | [C++源码](06-Stack-and-Queue/Course%20Code%20(C%2B%2B)/Optional-03-Classic-Non-Recursive-Postorder-Traversal/) | [Java源码](06-Stack-and-Queue/Course%20Code%20(Java)/Optional-03-Classic-Non-Recursive-Postorder-Traversal/) |
+| 补充代码4：二叉树的Morris非递归遍历 | [C++源码] | [Java源码] |
+| 补充代码5：双向广度优先搜索 Word Ladder | [C++源码] | [Java源码] |
 | **第七章：二叉树和递归** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/07-Binary-Tree-and-Recursion/Course%20Code%20(C%2B%2B)/) | [章节Java源码](07-Binary-Tree-and-Recursion/Course%20Code%20(Java)/) |
 | 7-1 二叉树天然的递归结构 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/07-Binary-Tree-and-Recursion/Course%20Code%20(C%2B%2B)/01-Maximum-Depth-of-Binary-Tree/) | [Java源码](07-Binary-Tree-and-Recursion/Course%20Code%20(Java)/01-Maximum-Depth-of-Binary-Tree/src) |
 | 7-2 一个简单的二叉树问题引发的血案 Invert Binary Tree | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/07-Binary-Tree-and-Recursion/Course%20Code%20(C%2B%2B)/02-Invert-Binary-Tree/) | [Java源码](07-Binary-Tree-and-Recursion/Course%20Code%20(Java)/02-Invert-Binary-Tree/src/) |
@@ -146,14 +147,14 @@
 | **第三章 数组中的问题最常见** | | | | |
 | 3-1 从二分查找法看如何写出正确的程序 | [无] | [无] | | |
 | 3-2 改变变量定义，依然可以写出正确的算法 | [无] | [无] | 34 374 | |
-| 3-3 在LeetCode上解决第一个问题 Move Zeros | 283 | [无] | 728 | |
+| 3-3 在LeetCode上解决第一个问题 Move Zeros | 283 | [无] | 728 747 | |
 | 3-4 即使简单的问题，也有很多优化的思路 | 283 | 27 26 80 | | |
 | 3-5 三路快排partition思路的应用 Sort Color | 75 | 88 215 | | |
 | 3-6 对撞指针 Two Sum II - Input Array is Sorted | 167 | 125 344 345 11 | | |
 | 3-7 滑动窗口 Minimum Size Subarray Sum | 209 3 | 438 76 | 713 | |
 | 补充1：更多数组中的问题 | [无] | [无] | 303 121 122 717 674 268 727 56 | 123 |
-| 补充2：字符数组（字符串） | [无] | [无] | 434 387 696 443 791 800 806 809 | |
-| 补充3：二维数组中的问题 | [无] | [无] | 54 59 598 723 766 794 807 | |
+| 补充2：字符数组（字符串） | [无] | [无] | 434 387 696 443 791 800 806 809 67 28 14 | |
+| 补充3：二维数组中的问题 | [无] | [无] | 54 59 598 723 766 794 807 498 118 | |
 | 补充4: 二分查找法的更多问题 | [无] | [无] | | 793 |
 | **第四章 查找表相关问题** | | | | |
 | 4-1 set的使用 Intersection of Two Arrays | 349 | [无] | | |
@@ -178,7 +179,7 @@
 | 6-1 栈的基础应用 Valid Parentheses | 20 | 150 71 | 735 | |
 | 6-2 栈和递归的紧密关系 Binary Tree Preorder, Inorder and Postorder Traversal | 144 94 145 | [无] | | |
 | 6-3 运用栈模拟递归 | 144 94 145 | 341 | 388 | |
-| 6-4 队列的典型应用 Binary Tree Level Order Traversal | 102 | 107 103 199 | | |
+| 6-4 队列的典型应用 Binary Tree Level Order Traversal | 102 | 107 103 199 | 232 637 | |
 | 6-5 BFS和图的最短路径 Perfect Squares | 279 | 127 126 | | 675 |
 | 6-6 优先队列 | [无] | [无] | | |
 | 6-7 优先队列相关的算法问题 Top K Frequent Elements | 347 | 23 | 692 | 239 786 |
@@ -186,10 +187,10 @@
 | 7-1 二叉树天然的递归结构 | 104 | 111 | | |
 | 7-2 一个简单的二叉树问题引发的血案 Invert Binary Tree | 226 | 100 101 222 110 | | |
 | 7-3 注意递归的终止条件 Path Sum | 112 | 111 404 | | |
-| 7-4 定义递归问题 Binary Tree Path | 257 | 113 129 | | |
+| 7-4 定义递归问题 Binary Tree Path | 257 | 113 129 | 250 | |
 | 7-5 稍复杂的递归逻辑 Path Sum III | 437 | [无] | 785 | |
-| 7-6 二分搜索树中的问题 Lowest Common Ancestor of a Binary Search Tree | 783 235 | 98 450 108 230 236 530 | | |
-| 补充1 更多二叉树的问题 | [无] | [无] | 109 | 87 |
+| 7-6 二分搜索树中的问题 Lowest Common Ancestor of a Binary Search Tree | 783 235 | 98 450 108 230 236 530 | | 99 |
+| 补充1 更多二叉树的问题 | [无] | [无] | 109 105 106 | 87 |
 | **第八章 递归和回溯法** | | | | |
 | 8-1 树形问题 Letter Combinations of a Phone Number | 17 | [无] | 690 | |
 | 8-2 什么是回溯 | 17 | 93 131 | 797 | |
@@ -202,7 +203,7 @@
 | 补充1 其他递归问题 | [无] | [无] | | 390 |
 | **第九章 动态规划基础** | | | | |
 | 9-1 什么是动态规划 | [无] | [无] | | |
-| 9-2 第一个动态规划问题 Climbing Stairs | 70 | 120 64 | 123 309 714 | |
+| 9-2 第一个动态规划问题 Climbing Stairs | 70 | 120 64 | 123 309 714 118 | |
 | 9-3 发现重叠子问题 Integer Break | 343 | 279 91 62 63 | | |
 | 9-4 状态的定义和状态转移 House Robber | 198 | 213 337 309 | 740 | |
 | 9-5 0-1背包问题 | [无] | [无] | | |
@@ -213,7 +214,7 @@
 | 补充1：状态压缩DP | [无] | [无] | 698 | |
 | 补充2：更多动态规划问题 | [无] | [无] | 188 790 | 600 727 741 788 |
 | **第十章 贪心算法** | | | | |
-| 10-1 贪心基础 Assign Cookies | 455 | 392 | | |
+| 10-1 贪心基础 Assign Cookies | 455 | 392 | 561 | |
 | 10-2 贪心算法与动态规划的关系 Non-overlapping Intervals | 435 | [无] | | |
 | 10-3 贪心选择性质的证明 | [无] | [无] | | |
 
