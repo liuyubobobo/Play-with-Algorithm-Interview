@@ -51,10 +51,10 @@
 | 2-5 递归算法的时间复杂度 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/02-Time-Complexity/Course%20Code%20(C%2B%2B)/05-Recursion-Time-Complexity/) | [Java源码](02-Time-Complexity/Course%20Code%20(Java)/05-Recursion-Time-Complexity/src/) |
 | 2-6 均摊时间复杂度分析（Amortized Time Analysis） | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/02-Time-Complexity/Course%20Code%20(C%2B%2B)/06-Amortized-Time/) | [Java源码](02-Time-Complexity/Course%20Code%20(Java)/06-Amortized-Time/src/) |
 | 2-7 避免复杂度的震荡 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/02-Time-Complexity/Course%20Code%20(C%2B%2B)/07-Amortized-Time-2/) | [Java源码](02-Time-Complexity/Course%20Code%20(C%2B%2B)/07-Amortized-Time-2/src/) |
-| 补充代码1: 动态空间的数组结构 | [C++源码](02-Time-Complexity/Course%20Code%20(C%2B%2B)/Optional-1-Dynamic-Vector) | [Java源码](02-Time-Complexity/Course%20Code%20(Java)/Optional-1-Dynamic-Vector/src/) |
-| 补充代码2: 动态空间的栈结构 | [整理中] | [敬请期待] |
-| 补充代码3: 动态空间的队列结构 | [整理中] | [敬请期待] |
-| 补充代码4: 动态空间的堆结构<br/>关于堆结构的详细解析，参见《[算法与数据结构](http://coding.imooc.com/class/chapter/71.html)》第四章 | [整理中] | [敬请期待] |
+| 补充代码1: 动态空间的数组结构 | [玩转数据结构](https://coding.imooc.com/class/207.html) | [第二章 第2-9小节](https://coding.imooc.com/lesson/207.html#mid=13407) |
+| 补充代码2: 动态空间的栈结构 | [玩转数据结构](https://coding.imooc.com/class/207.html) | [第三章 第2小节](https://coding.imooc.com/lesson/207.html#mid=13418) |
+| 补充代码3: 动态空间的队列结构 | [玩转数据结构](https://coding.imooc.com/class/207.html) | [第三章 第5-8小节](https://coding.imooc.com/lesson/207.html#mid=13422) |
+| 补充代码4: 动态空间的堆结构 | [玩转数据结构](https://coding.imooc.com/class/207.html) | [第八章](https://coding.imooc.com/lesson/207.html#mid=13738) |
 | **第三章：数组中的问题其实最常见** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/03-Using-Array/Course%20Code%20(C%2B%2B)/) | [章节Java源码](/03-Using-Array/Course%20Code%20(Java)/) |
 | 3-1 从二分查找法看如何写出正确的程序 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/03-Using-Array/Course%20Code%20(C%2B%2B)/01-Binary-Search/) | [Java源码](03-Using-Array/Course%20Code%20(Java)/01-Binary-Search/src) |
 | 3-2 改变变量定义，依然可以写出正确的算法 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/03-Using-Array/Course%20Code%20(C%2B%2B)/02-Binary-Search-II/) | [Java源码](03-Using-Array/Course%20Code%20(Java)/02-Binary-Search-II/src/) |
@@ -64,6 +64,7 @@
 | 3-6 对撞指针 Two Sum II - Input Array is Sorted | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/03-Using-Array/Course%20Code%20(C%2B%2B)/06-Two-Sum-II/) | [Java源码](03-Using-Array/Course%20Code%20(Java)/06-Two-Sum-II/src/) |
 | 3-7 滑动窗口 Minimum Size Subarray Sum | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/03-Using-Array/Course%20Code%20(C%2B%2B)/07-Minimum-Size-Subarray-Sum/) | [Java源码](03-Using-Array/Course%20Code%20(Java)/07-Minimum-Size-Subarray-Sum/src/) |
 | 3-8 在滑动窗口中做记录 Longest Substring Without Repeating Characters | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/03-Using-Array/Course%20Code%20(C%2B%2B)/08-Longest-Substring-Without-Repeating-Characters/) | [Java源码](03-Using-Array/Course%20Code%20(Java)/08-Longest-Substring-Without-Repeating-Characters/src/) |
+| 补充代码1: 各种排序算法的系统剖析 | [算法与数据结构](https://coding.imooc.com/class/71.html) | [第二，三，四章](https://coding.imooc.com/lesson/71.html#mid=1446) |
 | **第四章：查找表相关问题** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/04-Using-Hash-Table/Course%20Code%20(C%2B%2B)/) | [章节Java源码](04-Using-Hash-Table/Course%20Code%20(Java)/) |
 | 4-1 set的使用 Intersection of Two Arrays | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/04-Using-Hash-Table/Course%20Code%20(C%2B%2B)/01-Intersection-of-Two-Arrays/) | [Java源码](04-Using-Hash-Table/Course%20Code%20(Java)/01-Intersection-of-Two-Arrays/src/) |
 | 4-2 map的使用 Intersection of Two Arrays II | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/04-Using-Hash-Table/Course%20Code%20(C%2B%2B)/02-Intersection-of-Two-Arrays-II/) | [Java源码](04-Using-Hash-Table/Course%20Code%20(Java)/02-Intersection-of-Two-Arrays-II/src/) |
@@ -73,6 +74,10 @@
 | 4-6 灵活选择键值 Number of Boomerangs | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/04-Using-Hash-Table/Course%20Code%20(C%2B%2B)/06-Number-of-Boomerangs/) | [Java源码](04-Using-Hash-Table/Course%20Code%20(Java)/06-Number-of-Boomerangs/src/) |
 | 4-7 查找表和滑动窗口 Contain Duplicate II | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/04-Using-Hash-Table/Course%20Code%20(C%2B%2B)/07-Contains-Duplicate-II/) | [Java源码](04-Using-Hash-Table/Course%20Code%20(Java)/07-Contains-Duplicate-II/src/) |
 | 4-8 二分搜索树底层实现的顺序性 Contain Duplicate III | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/04-Using-Hash-Table/Course%20Code%20(C%2B%2B)/08-Contains-Duplicate-III/) | [Java源码](04-Using-Hash-Table/Course%20Code%20(Java)/08-Contains-Duplicate-III/src/) |
+| 补充代码1：基于链表和二分搜索树实现的set和map | [玩转数据结构](https://coding.imooc.com/class/207.html) | [第七章](https://coding.imooc.com/lesson/207.html#mid=13703) |
+| 补充代码2: 基于AVL树实现的set和map | [玩转数据结构](https://coding.imooc.com/class/207.html) | [第十二章](https://coding.imooc.com/lesson/207.html#mid=14346) |
+| 补充代码3: 基于红黑树实现的set和map | [玩转数据结构](https://coding.imooc.com/class/207.html) | [第十三章](https://coding.imooc.com/lesson/207.html#mid=15086) |
+| 补充代码2: 基于哈希表实现的set和map | [玩转数据结构](https://coding.imooc.com/class/207.html) | [第十四章] |
 | **第五章：在链表中穿针引线** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/05-About-Linked-List/Course%20Code%20(C%2B%2B)/) | [章节Java源码](05-About-Linked-List/Course%20Code%20(Java)/) |
 | 5-1 链表，在节点间穿针引线 Reverse Linked List | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/05-About-Linked-List/Course%20Code%20(C%2B%2B)/01-Reverse-Linked-List/) | [Java源码](05-About-Linked-List/Course%20Code%20(Java)/01-Reverse-Linked-List/src/) |
 | 5-2 测试你的链表程序 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/05-About-Linked-List/Course%20Code%20(C%2B%2B)/02-Test-Your-Linked-List/) | [Java源码](05-About-Linked-List/Course%20Code%20(Java)/02-Test-Your-Linked-List/src/) |
@@ -80,7 +85,9 @@
 | 5-4 复杂的穿针引线 Swap Nodes in Pairs | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/05-About-Linked-List/Course%20Code%20(C%2B%2B)/04-Swap-Nodes-in-Pairs/) | [Java源码](05-About-Linked-List/Course%20Code%20(Java)/04-Swap-Nodes-in-Pairs/src/) |
 | 5-5 不仅仅是穿针引线 Delete Node in a Linked List | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/05-About-Linked-List/Course%20Code%20(C%2B%2B)/05-Delete-Node-in-a-Linked-List/) | [Java源码](05-About-Linked-List/Course%20Code%20(Java)/05-Delete-Node-in-a-Linked-List/src/) |
 | 5-6 链表与双指针 Remove Nth Node From End of List | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/05-About-Linked-List/Course%20Code%20(C%2B%2B)/06-Remove-Nth-Node-From-End-of-List/) | [Java源码](05-About-Linked-List/Course%20Code%20(Java)/06-Remove-Nth-Node-From-End-of-List/src/) |
-| 补充代码1：Floyd's 环检测算法 | [C++源码] | [Java源码] |
+| 补充代码1：链表的完整底层实现 | [玩转数据结构](https://coding.imooc.com/class/207.html) | [第四章](https://coding.imooc.com/lesson/207.html#mid=13429) |
+| 补充代码2：通过链表深刻理解递归 | [玩转数据结构](https://coding.imooc.com/class/207.html) | [第五章](https://coding.imooc.com/lesson/207.html#mid=13463) |
+| 补充代码3：Floyd's 环检测算法 | [C++源码] | [Java源码] |
 | **第六章：栈，队列，优先队列** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/06-Stack-and-Queue/Course%20Code%20(C%2B%2B)/) | [章节Java源码](06-Stack-and-Queue/Course%20Code%20(Java)/) |
 | 6-1 栈的基础应用 Valid Parentheses | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/06-Stack-and-Queue/Course%20Code%20(C%2B%2B)/01-Valid-Parentheses/) | [Java源码](06-Stack-and-Queue/Course%20Code%20(Java)/01-Valid-Parentheses/src/) |
 | 6-2 栈和递归的紧密联系 Binary Tree Preoder, Inorder and Posorder Traversal | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/06-Stack-and-Queue/Course%20Code%20(C%2B%2B)/02-Recursion-and-Stack/) | [Java源码](06-Stack-and-Queue/Course%20Code%20(Java)/02-Recursion-and-Stack/src/) |
@@ -89,9 +96,9 @@
 | 6-5 BFS和图的最短路径 Perfect Squares | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/06-Stack-and-Queue/Course%20Code%20(C%2B%2B)/05-Perfect-Squares/) | [Java源码](06-Stack-and-Queue/Course%20Code%20(Java)/05-Perfect-Squares/src/) |
 | 6-6 优先队列 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/06-Stack-and-Queue/Course%20Code%20(C%2B%2B)/06-Priority-Queue/) | [Java源码](06-Stack-and-Queue/Course%20Code%20(Java)/06-Priority-Queue/src/) |
 | 6-7 优先队列相关的算法问题 Top K Frequent Elements | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/06-Stack-and-Queue/Course%20Code%20(C%2B%2B)/07-Top-K-Frequent-Elements/) | [Java源码](06-Stack-and-Queue/Course%20Code%20(Java)/07-Top-K-Frequent-Elements/src/) |
-| 补充代码1：教科书经典前序非递归遍历 | [C++源码](06-Stack-and-Queue/Course%20Code%20(C%2B%2B)/Optional-01-Classic-Non-Recursive-Preorder-Traversal/) | [Java源码](06-Stack-and-Queue/Course%20Code%20(Java)/Optional-01-Classic-Non-Recursive-Preorder-Traversal/src/) |
-| 补充代码2：教科书经典中序非递归遍历 | [C++源码](06-Stack-and-Queue/Course%20Code%20(C%2B%2B)/Optional-02-Classic-Non-Recursive-Inorder-Traversal/) | [Java源码](06-Stack-and-Queue/Course%20Code%20(Java)/Optional-02-Classic-Non-Recursive-Inorder-Traversal/src/) |
-| 补充代码3：教科书经典后序非递归遍历 | [C++源码](06-Stack-and-Queue/Course%20Code%20(C%2B%2B)/Optional-03-Classic-Non-Recursive-Postorder-Traversal/) | [Java源码](06-Stack-and-Queue/Course%20Code%20(Java)/Optional-03-Classic-Non-Recursive-Postorder-Traversal/src/) |
+| 补充代码1：二叉树经典前序非递归遍历 | [C++源码](06-Stack-and-Queue/Course%20Code%20(C%2B%2B)/Optional-01-Classic-Non-Recursive-Preorder-Traversal/) | [Java源码](06-Stack-and-Queue/Course%20Code%20(Java)/Optional-01-Classic-Non-Recursive-Preorder-Traversal/src/) |
+| 补充代码2：二叉树经典中序非递归遍历 | [C++源码](06-Stack-and-Queue/Course%20Code%20(C%2B%2B)/Optional-02-Classic-Non-Recursive-Inorder-Traversal/) | [Java源码](06-Stack-and-Queue/Course%20Code%20(Java)/Optional-02-Classic-Non-Recursive-Inorder-Traversal/src/) |
+| 补充代码3：二叉树经典后序非递归遍历 | [C++源码](06-Stack-and-Queue/Course%20Code%20(C%2B%2B)/Optional-03-Classic-Non-Recursive-Postorder-Traversal/) | [Java源码](06-Stack-and-Queue/Course%20Code%20(Java)/Optional-03-Classic-Non-Recursive-Postorder-Traversal/src/) |
 | 补充代码4：二叉树的Morris非递归遍历 | [C++源码](06-Stack-and-Queue/Course%20Code%20(C%2B%2B)/Optional-04-Binary-Tree-Morris-Traversal/) | [Java源码](06-Stack-and-Queue/Course%20Code%20(Java)/Optional-04-Binary-Tree-Morris-Traversal/src/) |
 | 补充代码5：双向广度优先搜索 Word Ladder | [C++源码](06-Stack-and-Queue/Course%20Code%20(C%2B%2B)/Optional-05-Word-Ladder/) | [Java源码](06-Stack-and-Queue/Course%20Code%20(Java)/Optional-05-Word-Ladder/src/) |
 | **第七章：二叉树和递归** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/07-Binary-Tree-and-Recursion/Course%20Code%20(C%2B%2B)/) | [章节Java源码](07-Binary-Tree-and-Recursion/Course%20Code%20(Java)/) |
@@ -101,8 +108,15 @@
 | 7-4 定义递归问题 Binary Tree Path | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/07-Binary-Tree-and-Recursion/Course%20Code%20(C%2B%2B)/04-Binary-Tree-Paths/) | [Java源码](07-Binary-Tree-and-Recursion/Course%20Code%20(Java)/04-Binary-Tree-Paths/src/) |
 | 7-5 稍复杂的递归逻辑 Path Sum III | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/07-Binary-Tree-and-Recursion/Course%20Code%20(C%2B%2B)/05-Path-Sum-III/) | [Java源码](07-Binary-Tree-and-Recursion/Course%20Code%20(Java)/05-Path-Sum-III/src/) |
 | 7-6 二分搜索树中问题 Lowest Common Ancestor of a Binary Search Tree | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/07-Binary-Tree-and-Recursion/Course%20Code%20(C%2B%2B)/06-Lowest-Common-Ancestor-of-a-Binary-Search-Tree/) | [Java源码](07-Binary-Tree-and-Recursion/Course%20Code%20(Java)/06-Lowest-Common-Ancestor-of-a-Binary-Search-Tree/) |
-| 补充代码1：使用数组生成二叉树测试用例 | [整理中] | [敬请期待] |
-| 补充代码2：LCA问题 | [整理中] | [敬请期待] |
+| 补充代码1：二分搜索树的完整底层实现 | [玩转数据结构](https://coding.imooc.com/class/207.html) | [第六章](https://coding.imooc.com/lesson/207.html#mid=13454) |
+| 补充代码2：AVL树的完整底层实现 | [玩转数据结构](https://coding.imooc.com/class/207.html) | [第十二章](https://coding.imooc.com/lesson/207.html#mid=14346) |
+| 补充代码3：红黑树的完整底层实现 | [玩转数据结构](https://coding.imooc.com/class/207.html) | [第十三章](https://coding.imooc.com/lesson/207.html#mid=15086) |
+| 补充代码4：使用数组生成二叉树测试用例 | [整理中] | [敬请期待] |
+| 补充代码5：普通二叉树的LCA问题 | [整理中] | [敬请期待] |
+| 补充代码6：二分搜索树的LCA问题 | [整理中] | [敬请期待] |
+| 补充代码7：更多树结构之线段树 | [玩转数据结构](https://coding.imooc.com/class/207.html) | [第九章](https://coding.imooc.com/lesson/207.html#mid=13843) |
+| 补充代码8：更多树结构之Trie | [玩转数据结构](https://coding.imooc.com/class/207.html) | [第十章](https://coding.imooc.com/lesson/207.html#mid=13850) |
+| 补充代码9：更多树结构之并查集 | [玩转数据结构](https://coding.imooc.com/class/207.html) | [第十一章](https://coding.imooc.com/lesson/207.html#mid=14165) |
 | **第八章：递归和回溯法** | [章节C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/08-Recurion-and-Backstracking/Course%20Code%20(C%2B%2B)/) | [章节Java源码](08-Recurion-and-Backstracking/Course%20Code%20(Java)/) |
 | 8-1 树形问题 Letter Combinations of a Phone Number | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/08-Recurion-and-Backstracking/Course%20Code%20(C%2B%2B)/01-02-Letter-Combinations-of-a-Phone-Number/) | [Java源码](08-Recurion-and-Backstracking/Course%20Code%20(Java)/01-02-Letter-Combinations-of-a-Phone-Number/src/) |
 | 8-2 什么是回溯 | [C++源码](https://github.com/liuyubobobo/Play-with-Algorithm-Interview/tree/master/08-Recurion-and-Backstracking/Course%20Code%20(C%2B%2B)/01-02-Letter-Combinations-of-a-Phone-Number/) | [Java源码](08-Recurion-and-Backstracking/Course%20Code%20(Java)/01-02-Letter-Combinations-of-a-Phone-Number/src/) |
@@ -190,7 +204,7 @@
 | 7-4 定义递归问题 Binary Tree Path | 257 | 113 129 | 250 | |
 | 7-5 稍复杂的递归逻辑 Path Sum III | 437 | [无] | 785 | |
 | 7-6 二分搜索树中的问题 Lowest Common Ancestor of a Binary Search Tree | 783 235 | 98 450 108 230 236 530 | | 99 |
-| 补充1 更多二叉树的问题 | [无] | [无] | 109 105 106 | 87 |
+| 补充1 更多二叉树的问题 | [无] | [无] | 109 105 106 173 | 87 |
 | **第八章 递归和回溯法** | | | | |
 | 8-1 树形问题 Letter Combinations of a Phone Number | 17 | [无] | 690 | |
 | 8-2 什么是回溯 | 17 | 93 131 | 797 | |
