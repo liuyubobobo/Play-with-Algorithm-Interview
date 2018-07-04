@@ -20,12 +20,18 @@ public:
         // 对memo的第0行和第0列进行初始化
         vector<vector<int> > memo(m, vector<int>(n, 0));
         for(int j = 0 ; j < n ; j ++)
-            if(s1[0] == s2[j])
-                memo[0][j] = 1;
+            if(s1[0] == s2[j]){
+                for(int k = j ; k < n ; k ++)
+                    memo[0][k] = 1;
+                break;
+            }
 
         for(int i = 0 ; i < m ; i ++)
-            if(s1[i] == s2[0])
-                memo[i][0] = 1;
+            if(s1[i] == s2[0]){
+                for(int k = i ; k < m ; k ++)
+                    memo[k][0] = 1;
+                break;
+            }
 
         // 动态规划的过程
         for(int i = 1 ; i < m ; i ++)
