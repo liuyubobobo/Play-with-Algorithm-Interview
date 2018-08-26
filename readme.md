@@ -17,9 +17,19 @@
 ![qrcode](qrcode.jpg)
 
 
-## 相关代码仓
+## 课程相关其他代码仓
 
-#### 我的LeetCode题解代码仓：[Play Leetcode](https://github.com/liuyubobobo/Play-Leetcode)
+* [**《算法与数据结构》课程**](https://coding.imooc.com/class/71.html), 代码仓: [Play-with-Algorithms](https://github.com/liuyubobobo/Play-with-Algorithms)
+
+* [**《看得见的算法》课程**](https://coding.imooc.com/class/138.html), 代码仓: [Play-with-Algorithm-Visualization](https://github.com/liuyubobobo/Play-with-Algorithm-Visualization)
+
+* [**《玩转数据结构》课程**](https://coding.imooc.com/class/207.html), 代码仓: [Play-with-Data-Structures](https://github.com/liuyubobobo/Play-with-Data-Structures)
+
+* 我的**LeetCode题解代码仓**：[Play Leetcode](https://github.com/liuyubobobo/Play-Leetcode) （注：以C++实现为主）
+
+* **LeetCode Explore题解代码仓**：[Play Leetcode Explore](https://github.com/liuyubobobo/Play-Leetcode-Explore) （注：以C++实现为主）
+    * [Leetcode Explore](https://leetcode.com/explore/) 是 Leetcode 在2017年底上线的新模块，分门别类地整理了Leetcode上的问题。如果刷Leetcode一时不知从哪里下手，可以从Leetcode Explore为指引开始：）
+    
 
 ## 本代码仓包括
 
@@ -29,11 +39,13 @@
 * 课程补充内容 [整理中][不断更新]
 * 课程勘误信息 [整理中][不断更新]
 
+
 ## 课程更新信息
 
 * **v 2.0** 添加课程Java源码
 
 * **v 1.0** 全套课程上线
+
 
 ## 课程源码目录 
 
@@ -150,9 +162,12 @@
 | **第十一章：课程结语** | [无代码] | [无代码] |
 | 11-1 结语 | [无代码] | [无代码] |
 
+
 ## 课程练习题及扩展练习题
 
 练习题源码以及更多扩展练习题将在v3版本公布，敬请期待：）
+
+现阶段可以在我的 [**Leetcode题解代码仓**](https://github.com/liuyubobobo/Play-Leetcode) 中查询参考代码。如果在我的题解代码仓中没有你想要的问题的相应的代码，可以随时在课程问答区留言索要相应代码和简单的算法思路说明：）
 
 | 章节 | 讲解例题 | 课程练习题 | 更多扩展练习 | 难题推荐 |
 | --- | --- | --- | --- | --- |
@@ -168,7 +183,7 @@
 | 3-7 滑动窗口 Minimum Size Subarray Sum | 209 3 | 438 76 | 713 | 159 |
 | 补充1：更多数组中的问题 | [无] | [无] | 303 121 122 717 674 268 727 56 485 852 853 868 189 | 123 |
 | 补充2：字符数组（字符串） | [无] | [无] | 151 186 557 434 387 696 443 791 800 806 809 67 28 14 859 | |
-| 补充3：二维数组中的问题 | [无] | [无] | 36 54 59 598 723 766 794 807 498 118 867 883 885 | |
+| 补充3：二维数组中的问题 | [无] | [无] | 36 54 59 598 723 766 794 807 498 118 867 883 885 892 | |
 | 补充4: 二分查找法的更多问题 | [无] | [无] | 875 | 793 |
 | **第四章 查找表相关问题** | | | | |
 | 4-1 set的使用 Intersection of Two Arrays | 349 | [无] | 874 | |
@@ -179,7 +194,7 @@
 | 4-6 灵活选择键值 Number of Boomerangs | 447 | 149 719 | | |
 | 4-7 查找表和滑动窗口 Contain Duplicate II | 219 | 217 | | |
 | 4-8 二分搜索树底层实现的顺序性 Contain Duplicate III | 220 | [无] | 155 716 729 731 855 | |
-| 补充1：查找表的更多问题 | [无] | [无] | 170 259 288 290 811 819 869 884 888 890 | 128 |
+| 补充1：查找表的更多问题 | [无] | [无] | 170 259 288 290 811 819 869 884 888 890 893 | 128 |
 | **第五章 在链表中穿针引线** | | | | |
 | 5-1 链表，在节点间穿针引线 Reverse Linked List | 206 | 92 | | |
 | 5-2 测试你的链表程序 | 206 | 83 86 328 2 445 | | |
@@ -193,12 +208,12 @@
 | 6-1 栈的基础应用 Valid Parentheses | 20 | 150 71 | 735 | |
 | 6-2 栈和递归的紧密关系 Binary Tree Preorder, Inorder and Postorder Traversal | 144 94 145 | [无] | | |
 | 6-3 运用栈模拟递归 | 144 94 145 | 341 | 388 | |
-| 6-4 队列的典型应用 Binary Tree Level Order Traversal | 102 | 107 103 199 | 232 637 | |
-| 6-5 BFS和图的最短路径 Perfect Squares | 279 | 127 126 | | 675 |
+| 6-4 队列的典型应用 Binary Tree Level Order Traversal | 102 | 107 103 199 346 | 232 637 | |
+| 6-5 BFS和图的最短路径 Perfect Squares | 279 | 127 126 286 | | 675 |
 | 6-6 优先队列 | [无] | [无] | | |
 | 6-7 优先队列相关的算法问题 Top K Frequent Elements | 347 | 23 | 692 | 23 239 786 857 |
 | 补充1：更多和栈相关的问题 | [无] | [无] | 856 | |
-| 补充2：更多和队列相关的问题 | [无] | [无] | 490 | |
+| 补充2：更多和队列相关的问题 | [无] | [无] | 490 622 | |
 | **第七章 二叉树和递归** | | | | |
 | 7-1 二叉树天然的递归结构 | 104 | 111 | | |
 | 7-2 一个简单的二叉树问题引发的血案 Invert Binary Tree | 226 | 100 101 222 110 | | |
@@ -206,7 +221,7 @@
 | 7-4 定义递归问题 Binary Tree Path | 257 | 113 129 222 | 250 | |
 | 7-5 稍复杂的递归逻辑 Path Sum III | 437 | [无] | 785 | |
 | 7-6 二分搜索树中的问题 Lowest Common Ancestor of a Binary Search Tree | 783 235 | 98 450 108 230 236 530 | | 99 |
-| 补充1 更多二叉树的问题 | [无] | [无] | 109 105 106 173 863 865 872 889 | 87 |
+| 补充1 更多二叉树的问题 | [无] | [无] | 109 105 106 173 863 865 872 889 894 | 87 |
 | **第八章 递归和回溯法** | | | | |
 | 8-1 树形问题 Letter Combinations of a Phone Number | 17 | [无] | 690 | |
 | 8-2 什么是回溯 | 17 | 93 131 | 797 | |
@@ -249,7 +264,7 @@
 | 随机算法 | 268 382 398 470 | 710 |
 | 数学问题 | 119 319 360 858 | 878 891 |
 | 博弈论 | 877 | |
-| 数据结构设计 | 380 | 381 |
+| 数据结构设计 | 380 | 381 895 |
 | 其他问题 | 391 780 781 789 795 799 866 880 | 732 |
 
 ---
