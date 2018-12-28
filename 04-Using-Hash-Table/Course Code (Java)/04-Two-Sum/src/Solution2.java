@@ -21,13 +21,11 @@ public class Solution2 {
 
         for(int i = 0 ; i < nums.length; i ++){
 
-            if(record.containsKey(target - nums[i]))
-                if(record.get(target - nums[i]) != i){
-                    int[] res = {i, record.get(target - nums[i])};
-                    return res;
-                }
-
-            record.put(nums[i], i);
+            Integer index = record.get(target - nums[i]);
+            if(index != null && index != i){
+                int[] res = {i, index};
+                return res;
+            }
         }
 
         throw new IllegalStateException("the input has no solution");
