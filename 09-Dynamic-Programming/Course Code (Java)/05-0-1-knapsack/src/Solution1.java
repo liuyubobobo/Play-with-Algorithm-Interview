@@ -19,6 +19,9 @@ public class Solution1 {
             return 0;
 
         memo = new int[n][C + 1];
+        for(int i = 0; i < n; i ++)
+            for(int j = 0; j <= C; j ++)
+                memo[i][j] = -1;
         return bestValue(w, v, n - 1, C);
     }
 
