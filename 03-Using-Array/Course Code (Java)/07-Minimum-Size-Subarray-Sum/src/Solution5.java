@@ -20,7 +20,7 @@ public class Solution5 {
             sums[i] = sums[i-1] + nums[i-1];
 
         int res = nums.length + 1;
-        for(int l = 0 ; l < nums.length - 1 ; l ++){
+        for(int l = 0 ; l < nums.length ; l ++){
             // Java类库中没有内置的lowerBound方法，
             // 我们需要自己实现一个基于二分搜索的lowerBound:)
             int r = lowerBound(sums, sums[l] + s);
